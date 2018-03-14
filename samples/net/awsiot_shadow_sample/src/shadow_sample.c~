@@ -60,10 +60,10 @@
 
 #define MAX_LENGTH_OF_UPDATE_JSON_BUFFER 200
 
-static char certDirectory[PATH_MAX + 1] = "../../../certs";
-static char HostAddress[255] = AWS_IOT_MQTT_HOST;
-static uint32_t port = AWS_IOT_MQTT_PORT;
-static uint8_t numPubs = 5;
+static char certDirectory[PATH_MAX + 1] = "../certs";
+//static char HostAddress[255] = AWS_IOT_MQTT_HOST;
+//static uint32_t port = AWS_IOT_MQTT_PORT;
+//static uint8_t numPubs = 5;
 
 static void simulateRoomTemperature(float *pRoomTemperature) {
 	static float deltaChange;
@@ -102,12 +102,23 @@ void windowActuate_Callback(const char *pJsonString, uint32_t JsonStringDataLen,
 	}
 }
 
-void parseInputArgsForConnectParams() {
+/*void parseInputArgsForConnectParams() {
 	int opt=0;
 	char optopt;    //c
 	char optarg[255];   //c
 	char certDirectory[255];   //c
 	
+	strcpy(HostAddress, optarg);
+	IOT_DEBUG("Host %s", optarg);
+	
+	port = atoi(optarg);
+	IOT_DEBUG("arg %s", optarg);
+
+	strcpy(certDirectory, optarg);
+	IOT_DEBUG("cert root directory %s", optarg);	
+	
+	numPubs = atoi(optarg);
+	IOT_DEBUG("num pubs %s", optarg);			
 	while(opt != (-1)) {
 		switch(opt) {
 			case 'h':
@@ -142,7 +153,7 @@ void parseInputArgsForConnectParams() {
 	}
 
 }
-
+*/
 void main(void) {
 	IoT_Error_t rc = FAILURE;
 	//int32_t i = 0;
@@ -186,7 +197,7 @@ void main(void) {
 	IOT_DEBUG("clientCRT %s", clientCRT);
 	IOT_DEBUG("clientKey %s", clientKey);
 
-	parseInputArgsForConnectParams();
+	//parseInputArgsForConnectParams();
 
 	// initialize the mqtt client
 	AWS_IoT_Client mqttClient;

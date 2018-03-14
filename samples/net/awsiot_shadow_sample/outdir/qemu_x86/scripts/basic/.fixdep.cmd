@@ -1,6 +1,6 @@
-cmd_scripts/basic/fixdep := gcc -Wp,-MD,scripts/basic/.fixdep.d -Iscripts/basic -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -std=gnu89 -o scripts/basic/fixdep /home/shubham/zephyr-zephyr-aws-1.9.2/zephyr/scripts/basic/fixdep.c  
+cmd_scripts/basic/fixdep := gcc -Wp,-MD,scripts/basic/.fixdep.d -Iscripts/basic -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -std=gnu89 -o scripts/basic/fixdep /home/shubham/zephyr-zephyr/scripts/basic/fixdep.c  
 
-source_scripts/basic/fixdep := /home/shubham/zephyr-zephyr-aws-1.9.2/zephyr/scripts/basic/fixdep.c
+source_scripts/basic/fixdep := /home/shubham/zephyr-zephyr/scripts/basic/fixdep.c
 
 deps_scripts/basic/fixdep := \
     $(wildcard include/config/his/driver.h) \
