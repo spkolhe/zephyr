@@ -1,0 +1,26 @@
+subdir-ccflags-$(CONFIG_AWS_IOT_SDK) += -I$(srctree)/ext/lib/awsiot/include
+subdir-ccflags-$(CONFIG_AWS_IOT_SDK) += -I$(srctree)/ext/lib/awsiot/ext/jsmn
+subdir-ccflags-$(CONFIG_AWS_IOT_SDK) += -I$(srctree)/ext/lib/awsiot/platform/common
+subdir-ccflags-$(CONFIG_AWS_IOT_SDK) += -I$(srctree)/ext/lib/awsiot/platform/mbedtls
+subdir-ccflags-$(CONFIG_AWS_IOT_SDK) += -I$(srctree)/ext/lib/awsiot/platform/pthread
+obj-y += ext/jsmn/jsmn.o
+
+obj-y += src/aws_iot_json_utils.o
+obj-y += src/aws_iot_mqtt_client.o
+obj-y += src/aws_iot_mqtt_client_common_internal.o
+obj-y += src/aws_iot_mqtt_client_connect.o
+obj-y += src/aws_iot_mqtt_client_publish.o
+obj-y += src/aws_iot_mqtt_client_subscribe.o
+obj-y += src/aws_iot_mqtt_client_unsubscribe.o
+obj-y += src/aws_iot_mqtt_client_yield.o
+obj-y += src/aws_iot_shadow_actions.o
+obj-y += src/aws_iot_shadow.o
+obj-y += src/aws_iot_shadow_json.o
+obj-y += src/aws_iot_shadow_records.o
+
+# FIXME : Add platform specific things
+obj-y += platform/common/timer.o
+#obj-y += platform/mbedtls/network_mbedtls_wrapper.o
+obj-y += platform/pthread/threads_pthread_wrapper.o
+
+# For jsmn.o

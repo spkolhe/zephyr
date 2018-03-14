@@ -1,0 +1,3248 @@
+Archive member included to satisfy reference by file (symbol)
+
+src/built-in.o                (--whole-archive)
+lib/built-in.o                (--whole-archive)
+kernel/built-in.o             (--whole-archive)
+drivers/built-in.o            (--whole-archive)
+misc/built-in.o               (--whole-archive)
+boards/built-in.o             (--whole-archive)
+ext/built-in.o                (--whole-archive)
+subsys/built-in.o             (--whole-archive)
+arch/built-in.o               (--whole-archive)
+kernel/lib.a(device.o)        drivers/built-in.o (device_get_binding)
+kernel/lib.a(errno.o)         lib/built-in.o (__errno)
+kernel/lib.a(init.o)          arch/built-in.o (_Cstart)
+kernel/lib.a(mem_slab.o)      subsys/built-in.o (k_mem_slab_alloc)
+kernel/lib.a(poll.o)          subsys/built-in.o (k_poll_event_init)
+kernel/lib.a(queue.o)         subsys/built-in.o (k_queue_init)
+kernel/lib.a(sched.o)         arch/built-in.o (_kernel)
+kernel/lib.a(sem.o)           subsys/built-in.o (k_sem_init)
+kernel/lib.a(sys_clock.o)     drivers/built-in.o (_nano_sys_clock_tick_announce)
+kernel/lib.a(thread.o)        subsys/built-in.o (k_is_in_isr)
+kernel/lib.a(thread_abort.o)  arch/built-in.o (k_thread_abort)
+kernel/lib.a(idle.o)          kernel/lib.a(init.o) (idle)
+/home/shubham/zephyr-sdk/sysroots/i586-zephyr-elf/usr/lib/i586-zephyr-elf/6.2.0/libgcc.a(_udivdi3.o)
+                              drivers/built-in.o (__udivdi3)
+
+Allocating common symbols
+Common symbol       size              file
+
+AckWaitList         0x550             ext/built-in.o
+mbedtls_cipher_supported
+                    0x1c              ext/built-in.o
+_handling_timeouts  0x4               kernel/lib.a(sys_clock.o)
+SubscriptionList    0x67c             ext/built-in.o
+shadowRxBuf         0x201             ext/built-in.o
+_time_slice_elapsed
+                    0x4               kernel/lib.a(sys_clock.o)
+shadowDeltaTopic    0x50              ext/built-in.o
+_sys_clock_tick_count
+                    0x8               kernel/lib.a(sys_clock.o)
+mqttClientID        0x50              ext/built-in.o
+pMqttClient         0x4               ext/built-in.o
+sys_cache_line_size
+                    0x4               arch/built-in.o
+myThingName         0x14              ext/built-in.o
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 src/built-in.o
+ .text.ShadowUpdateStatusCallback
+                0x0000000000000000        0x5 src/built-in.o
+ .text.windowActuate_Callback
+                0x0000000000000000        0x5 src/built-in.o
+ .text.parseInputArgsForConnectParams
+                0x0000000000000000        0x5 src/built-in.o
+ .data          0x0000000000000000        0x0 src/built-in.o
+ .bss           0x0000000000000000        0x0 src/built-in.o
+ .text          0x0000000000000000        0x0 lib/built-in.o
+ .text.fprintf  0x0000000000000000       0x1c lib/built-in.o
+ .text.vfprintf
+                0x0000000000000000       0x1b lib/built-in.o
+ .text.printf   0x0000000000000000       0x1b lib/built-in.o
+ .text.vprintf  0x0000000000000000       0x1a lib/built-in.o
+ .text.sprintf  0x0000000000000000       0x33 lib/built-in.o
+ .text.vsnprintf
+                0x0000000000000000       0x38 lib/built-in.o
+ .text.vsprintf
+                0x0000000000000000       0x32 lib/built-in.o
+ .text._stdout_hook_default
+                0x0000000000000000        0x8 lib/built-in.o
+ .text.__stdout_hook_install
+                0x0000000000000000        0xd lib/built-in.o
+ .text.fputc    0x0000000000000000       0x15 lib/built-in.o
+ .text.fputs    0x0000000000000000       0x2c lib/built-in.o
+ .text.fwrite   0x0000000000000000       0x4b lib/built-in.o
+ .text.puts     0x0000000000000000       0x28 lib/built-in.o
+ .text.strncpy  0x0000000000000000       0x30 lib/built-in.o
+ .text.strncmp  0x0000000000000000       0x2b lib/built-in.o
+ .text.strcat   0x0000000000000000       0x22 lib/built-in.o
+ .text.strncat  0x0000000000000000       0x33 lib/built-in.o
+ .text.memchr   0x0000000000000000       0x29 lib/built-in.o
+ .text.strncasecmp
+                0x0000000000000000       0x3b lib/built-in.o
+ .text.strstr   0x0000000000000000       0x5c lib/built-in.o
+ .text.strtoul  0x0000000000000000      0x132 lib/built-in.o
+ .text.atoi     0x0000000000000000       0x4c lib/built-in.o
+ .rodata.charmap
+                0x0000000000000000      0x100 lib/built-in.o
+ .data          0x0000000000000000        0x0 lib/built-in.o
+ .data._stdout_hook
+                0x0000000000000000        0x4 lib/built-in.o
+ .bss           0x0000000000000000        0x0 lib/built-in.o
+ .text          0x0000000000000000        0x0 kernel/built-in.o
+ .text.sys_kernel_version_get
+                0x0000000000000000        0xa kernel/built-in.o
+ .data          0x0000000000000000        0x0 kernel/built-in.o
+ .bss           0x0000000000000000        0x0 kernel/built-in.o
+ .comment       0x0000000000000000       0x12 kernel/built-in.o
+ .debug_aranges
+                0x0000000000000000       0x20 kernel/built-in.o
+ .debug_info    0x0000000000000000       0x85 kernel/built-in.o
+ .debug_abbrev  0x0000000000000000       0x5c kernel/built-in.o
+ .debug_line    0x0000000000000000       0xb7 kernel/built-in.o
+ .debug_frame   0x0000000000000000       0x34 kernel/built-in.o
+ .debug_str     0x0000000000000000      0x1d2 kernel/built-in.o
+ .debug_ranges  0x0000000000000000       0x10 kernel/built-in.o
+ .text          0x0000000000000000        0x0 drivers/built-in.o
+ .text._timer_cycle_get_32
+                0x0000000000000000       0x10 drivers/built-in.o
+ .text._loapic_irq_disable
+                0x0000000000000000       0x24 drivers/built-in.o
+ .text._arch_irq_disable
+                0x0000000000000000       0x1d drivers/built-in.o
+ .text._ioapic_irq_disable
+                0x0000000000000000       0x16 drivers/built-in.o
+ .text._ioapic_int_vec_set
+                0x0000000000000000       0x14 drivers/built-in.o
+ .text.crc16    0x0000000000000000       0x68 drivers/built-in.o
+ .data          0x0000000000000000        0x0 drivers/built-in.o
+ .bss           0x0000000000000000        0x0 drivers/built-in.o
+ .text          0x0000000000000000        0x0 misc/built-in.o
+ .text.str_out  0x0000000000000000       0x3f misc/built-in.o
+ .text.__printk_get_hook
+                0x0000000000000000        0xa misc/built-in.o
+ .text.snprintk
+                0x0000000000000000       0x43 misc/built-in.o
+ .text.vsnprintk
+                0x0000000000000000       0x42 misc/built-in.o
+ .data          0x0000000000000000        0x0 misc/built-in.o
+ .bss           0x0000000000000000        0x0 misc/built-in.o
+ .text          0x0000000000000000        0x0 ext/built-in.o
+ .text.mbedtls_aes_init
+                0x0000000000000000       0x17 ext/built-in.o
+ .text.mbedtls_aes_free
+                0x0000000000000000       0x1c ext/built-in.o
+ .text.mbedtls_aes_setkey_enc
+                0x0000000000000000      0x268 ext/built-in.o
+ .text.mbedtls_aes_setkey_dec
+                0x0000000000000000      0x167 ext/built-in.o
+ .text.mbedtls_internal_aes_encrypt
+                0x0000000000000000      0x4bb ext/built-in.o
+ .text.mbedtls_aes_encrypt
+                0x0000000000000000        0x9 ext/built-in.o
+ .text.mbedtls_internal_aes_decrypt
+                0x0000000000000000      0x4c7 ext/built-in.o
+ .text.mbedtls_aes_decrypt
+                0x0000000000000000        0x9 ext/built-in.o
+ .text.mbedtls_aes_crypt_ecb
+                0x0000000000000000       0x27 ext/built-in.o
+ .text.mbedtls_asn1_get_len
+                0x0000000000000000       0xc2 ext/built-in.o
+ .text.mbedtls_asn1_get_tag
+                0x0000000000000000       0x3d ext/built-in.o
+ .text.mbedtls_asn1_get_bool
+                0x0000000000000000       0x45 ext/built-in.o
+ .text.mbedtls_asn1_get_int
+                0x0000000000000000       0x69 ext/built-in.o
+ .text.mbedtls_asn1_get_mpi
+                0x0000000000000000       0x38 ext/built-in.o
+ .text.mbedtls_asn1_get_bitstring
+                0x0000000000000000       0x60 ext/built-in.o
+ .text.mbedtls_asn1_get_bitstring_null
+                0x0000000000000000       0x42 ext/built-in.o
+ .text.mbedtls_asn1_get_sequence_of
+                0x0000000000000000       0xa5 ext/built-in.o
+ .text.mbedtls_asn1_get_alg
+                0x0000000000000000       0xbf ext/built-in.o
+ .text.mbedtls_asn1_get_alg_null
+                0x0000000000000000       0x49 ext/built-in.o
+ .text.mbedtls_asn1_free_named_data
+                0x0000000000000000       0x31 ext/built-in.o
+ .text.mbedtls_asn1_free_named_data_list
+                0x0000000000000000       0x2c ext/built-in.o
+ .text.mbedtls_asn1_find_named_data
+                0x0000000000000000       0x35 ext/built-in.o
+ .text.mbedtls_asn1_write_len
+                0x0000000000000000      0x135 ext/built-in.o
+ .text.mbedtls_asn1_write_tag
+                0x0000000000000000       0x2c ext/built-in.o
+ .text.mbedtls_asn1_write_raw_buffer
+                0x0000000000000000       0x3a ext/built-in.o
+ .text.mbedtls_asn1_write_mpi
+                0x0000000000000000       0x8d ext/built-in.o
+ .text.mbedtls_asn1_write_null
+                0x0000000000000000       0x38 ext/built-in.o
+ .text.mbedtls_asn1_write_oid
+                0x0000000000000000       0x4d ext/built-in.o
+ .text.mbedtls_asn1_write_algorithm_identifier
+                0x0000000000000000       0x63 ext/built-in.o
+ .text.mbedtls_asn1_write_bool
+                0x0000000000000000       0x59 ext/built-in.o
+ .text.mbedtls_asn1_write_int
+                0x0000000000000000       0x80 ext/built-in.o
+ .text.mbedtls_asn1_write_printable_string
+                0x0000000000000000       0x4d ext/built-in.o
+ .text.mbedtls_asn1_write_ia5_string
+                0x0000000000000000       0x4d ext/built-in.o
+ .text.mbedtls_asn1_write_bitstring
+                0x0000000000000000       0x87 ext/built-in.o
+ .text.mbedtls_asn1_write_octet_string
+                0x0000000000000000       0x4d ext/built-in.o
+ .text.mbedtls_asn1_store_named_data
+                0x0000000000000000       0xe9 ext/built-in.o
+ .text.mpi_get_digit
+                0x0000000000000000       0x48 ext/built-in.o
+ .text.mpi_sub_hlp
+                0x0000000000000000       0x57 ext/built-in.o
+ .text.mpi_mul_hlp
+                0x0000000000000000      0x255 ext/built-in.o
+ .text.mbedtls_mpi_init
+                0x0000000000000000       0x20 ext/built-in.o
+ .text.mbedtls_mpi_free
+                0x0000000000000000       0x49 ext/built-in.o
+ .text.mbedtls_mpi_grow
+                0x0000000000000000       0x7c ext/built-in.o
+ .text.mbedtls_mpi_shrink
+                0x0000000000000000       0xa4 ext/built-in.o
+ .text.mbedtls_mpi_copy
+                0x0000000000000000       0x83 ext/built-in.o
+ .text.mbedtls_mpi_swap
+                0x0000000000000000       0x3e ext/built-in.o
+ .text.mbedtls_mpi_safe_cond_assign
+                0x0000000000000000       0xa1 ext/built-in.o
+ .text.mbedtls_mpi_safe_cond_swap
+                0x0000000000000000       0xcd ext/built-in.o
+ .text.mbedtls_mpi_lset
+                0x0000000000000000       0x4c ext/built-in.o
+ .text.mbedtls_mpi_get_bit
+                0x0000000000000000       0x29 ext/built-in.o
+ .text.mbedtls_mpi_set_bit
+                0x0000000000000000       0x67 ext/built-in.o
+ .text.mbedtls_mpi_lsb
+                0x0000000000000000       0x32 ext/built-in.o
+ .text.mbedtls_mpi_bitlen
+                0x0000000000000000       0x51 ext/built-in.o
+ .text.mbedtls_mpi_size
+                0x0000000000000000       0x14 ext/built-in.o
+ .text.mbedtls_mpi_read_binary
+                0x0000000000000000       0x88 ext/built-in.o
+ .text.mbedtls_mpi_write_binary
+                0x0000000000000000       0x6e ext/built-in.o
+ .text.mbedtls_mpi_shift_l
+                0x0000000000000000      0x101 ext/built-in.o
+ .text.mbedtls_mpi_shift_r
+                0x0000000000000000       0xcd ext/built-in.o
+ .text.mbedtls_mpi_cmp_abs
+                0x0000000000000000       0x98 ext/built-in.o
+ .text.mpi_montmul
+                0x0000000000000000      0x137 ext/built-in.o
+ .text.mbedtls_mpi_cmp_mpi
+                0x0000000000000000       0xb8 ext/built-in.o
+ .text.mbedtls_mpi_cmp_int
+                0x0000000000000000       0x39 ext/built-in.o
+ .text.mbedtls_mpi_add_abs
+                0x0000000000000000       0xf0 ext/built-in.o
+ .text.mbedtls_mpi_sub_abs
+                0x0000000000000000       0xa8 ext/built-in.o
+ .text.mbedtls_mpi_add_mpi
+                0x0000000000000000       0x64 ext/built-in.o
+ .text.mbedtls_mpi_sub_mpi
+                0x0000000000000000       0x64 ext/built-in.o
+ .text.mbedtls_mpi_add_int
+                0x0000000000000000       0x3d ext/built-in.o
+ .text.mbedtls_mpi_sub_int
+                0x0000000000000000       0x3d ext/built-in.o
+ .text.mbedtls_mpi_mul_mpi
+                0x0000000000000000      0x14f ext/built-in.o
+ .text.mbedtls_mpi_mul_int
+                0x0000000000000000       0x34 ext/built-in.o
+ .text.mbedtls_mpi_read_string
+                0x0000000000000000      0x1a0 ext/built-in.o
+ .text.mbedtls_mpi_div_mpi
+                0x0000000000000000      0x52a ext/built-in.o
+ .text.mbedtls_mpi_div_int
+                0x0000000000000000       0x40 ext/built-in.o
+ .text.mbedtls_mpi_mod_mpi
+                0x0000000000000000       0x7d ext/built-in.o
+ .text.mbedtls_mpi_mod_int
+                0x0000000000000000       0x93 ext/built-in.o
+ .text.mpi_write_hlp
+                0x0000000000000000       0x90 ext/built-in.o
+ .text.mbedtls_mpi_write_string
+                0x0000000000000000      0x16b ext/built-in.o
+ .text.mbedtls_mpi_exp_mod
+                0x0000000000000000      0x6ec ext/built-in.o
+ .text.mbedtls_mpi_gcd
+                0x0000000000000000      0x179 ext/built-in.o
+ .text.mbedtls_mpi_fill_random
+                0x0000000000000000       0x3b ext/built-in.o
+ .text.mbedtls_mpi_inv_mod
+                0x0000000000000000      0x42f ext/built-in.o
+ .text.ccm_auth_crypt
+                0x0000000000000000      0x3a5 ext/built-in.o
+ .text.mbedtls_ccm_init
+                0x0000000000000000       0x14 ext/built-in.o
+ .text.mbedtls_ccm_setkey
+                0x0000000000000000       0x6c ext/built-in.o
+ .text.mbedtls_ccm_free
+                0x0000000000000000       0x22 ext/built-in.o
+ .text.mbedtls_ccm_encrypt_and_tag
+                0x0000000000000000       0x43 ext/built-in.o
+ .text.mbedtls_ccm_auth_decrypt
+                0x0000000000000000       0x7b ext/built-in.o
+ .text.mbedtls_cipher_list
+                0x0000000000000000       0x3e ext/built-in.o
+ .text.mbedtls_cipher_info_from_type
+                0x0000000000000000       0x1d ext/built-in.o
+ .text.mbedtls_cipher_info_from_string
+                0x0000000000000000       0x38 ext/built-in.o
+ .text.mbedtls_cipher_info_from_values
+                0x0000000000000000       0x32 ext/built-in.o
+ .text.mbedtls_cipher_init
+                0x0000000000000000       0x14 ext/built-in.o
+ .text.mbedtls_cipher_free
+                0x0000000000000000       0x4c ext/built-in.o
+ .text.mbedtls_cipher_setup
+                0x0000000000000000       0x46 ext/built-in.o
+ .text.mbedtls_cipher_setkey
+                0x0000000000000000       0x77 ext/built-in.o
+ .text.mbedtls_cipher_set_iv
+                0x0000000000000000       0x60 ext/built-in.o
+ .text.mbedtls_cipher_reset
+                0x0000000000000000       0x1f ext/built-in.o
+ .text.mbedtls_cipher_update
+                0x0000000000000000       0x9a ext/built-in.o
+ .text.mbedtls_cipher_finish
+                0x0000000000000000       0x54 ext/built-in.o
+ .text.mbedtls_cipher_crypt
+                0x0000000000000000       0x64 ext/built-in.o
+ .text.mbedtls_cipher_auth_encrypt
+                0x0000000000000000       0x8c ext/built-in.o
+ .text.mbedtls_cipher_auth_decrypt
+                0x0000000000000000       0x4f ext/built-in.o
+ .text.ccm_ctx_free
+                0x0000000000000000       0x1b ext/built-in.o
+ .text.ccm_ctx_alloc
+                0x0000000000000000       0x23 ext/built-in.o
+ .text.ccm_aes_setkey_wrap
+                0x0000000000000000       0x18 ext/built-in.o
+ .text.aes_ctx_free
+                0x0000000000000000       0x1b ext/built-in.o
+ .text.aes_ctx_alloc
+                0x0000000000000000       0x26 ext/built-in.o
+ .text.aes_setkey_dec_wrap
+                0x0000000000000000        0x9 ext/built-in.o
+ .text.aes_setkey_enc_wrap
+                0x0000000000000000        0x9 ext/built-in.o
+ .text.aes_crypt_ecb_wrap
+                0x0000000000000000        0x9 ext/built-in.o
+ .text.cmac_multiply_by_u
+                0x0000000000000000       0x57 ext/built-in.o
+ .text.cmac_xor_block
+                0x0000000000000000       0x1e ext/built-in.o
+ .text.mbedtls_zeroize.constprop.1
+                0x0000000000000000       0x12 ext/built-in.o
+ .text.mbedtls_cipher_cmac_starts
+                0x0000000000000000       0x74 ext/built-in.o
+ .text.mbedtls_cipher_cmac_update
+                0x0000000000000000      0x124 ext/built-in.o
+ .text.mbedtls_cipher_cmac_finish
+                0x0000000000000000      0x162 ext/built-in.o
+ .text.mbedtls_cipher_cmac_reset
+                0x0000000000000000       0x35 ext/built-in.o
+ .text.mbedtls_cipher_cmac
+                0x0000000000000000       0x89 ext/built-in.o
+ .text.mbedtls_aes_cmac_prf_128
+                0x0000000000000000       0xb3 ext/built-in.o
+ .text.block_cipher_df
+                0x0000000000000000      0x1ce ext/built-in.o
+ .text.ctr_drbg_update_internal
+                0x0000000000000000       0x98 ext/built-in.o
+ .text.mbedtls_ctr_drbg_init
+                0x0000000000000000       0x17 ext/built-in.o
+ .text.mbedtls_ctr_drbg_free
+                0x0000000000000000       0x2c ext/built-in.o
+ .text.mbedtls_ctr_drbg_set_prediction_resistance
+                0x0000000000000000        0xe ext/built-in.o
+ .text.mbedtls_ctr_drbg_set_entropy_len
+                0x0000000000000000        0xe ext/built-in.o
+ .text.mbedtls_ctr_drbg_set_reseed_interval
+                0x0000000000000000        0xe ext/built-in.o
+ .text.mbedtls_ctr_drbg_update
+                0x0000000000000000       0x32 ext/built-in.o
+ .text.mbedtls_ctr_drbg_reseed
+                0x0000000000000000       0xc3 ext/built-in.o
+ .text.mbedtls_ctr_drbg_seed_entropy_len
+                0x0000000000000000       0x6c ext/built-in.o
+ .text.mbedtls_ctr_drbg_seed
+                0x0000000000000000       0x1e ext/built-in.o
+ .text.mbedtls_ctr_drbg_random_with_add
+                0x0000000000000000       0xff ext/built-in.o
+ .text.mbedtls_ctr_drbg_random
+                0x0000000000000000       0x1a ext/built-in.o
+ .text.ecjpake_write_len_point
+                0x0000000000000000       0x76 ext/built-in.o
+ .text.ecjpake_hash
+                0x0000000000000000      0x186 ext/built-in.o
+ .text.ecjpake_zkp_write
+                0x0000000000000000      0x170 ext/built-in.o
+ .text.ecjpake_ecp_add3
+                0x0000000000000000       0x6b ext/built-in.o
+ .text.ecjpake_mul_secret
+                0x0000000000000000       0x8a ext/built-in.o
+ .text.ecjpake_kkp_read
+                0x0000000000000000      0x182 ext/built-in.o
+ .text.mbedtls_ecjpake_init
+                0x0000000000000000       0xa2 ext/built-in.o
+ .text.mbedtls_ecjpake_free
+                0x0000000000000000       0x98 ext/built-in.o
+ .text.mbedtls_ecjpake_setup
+                0x0000000000000000       0x64 ext/built-in.o
+ .text.mbedtls_ecjpake_check
+                0x0000000000000000       0x26 ext/built-in.o
+ .text.mbedtls_ecjpake_read_round_one
+                0x0000000000000000       0xa1 ext/built-in.o
+ .text.mbedtls_ecjpake_write_round_one
+                0x0000000000000000      0x161 ext/built-in.o
+ .text.mbedtls_ecjpake_read_round_two
+                0x0000000000000000      0x11c ext/built-in.o
+ .text.mbedtls_ecjpake_write_round_two
+                0x0000000000000000      0x18e ext/built-in.o
+ .text.mbedtls_ecjpake_derive_secret
+                0x0000000000000000      0x12f ext/built-in.o
+ .text.ecp_get_type
+                0x0000000000000000       0x1a ext/built-in.o
+ .text.ecp_safe_invert_jac
+                0x0000000000000000       0x67 ext/built-in.o
+ .text.ecp_modp
+                0x0000000000000000       0xa8 ext/built-in.o
+ .text.ecp_double_jac
+                0x0000000000000000      0x584 ext/built-in.o
+ .text.ecp_normalize_jac
+                0x0000000000000000       0xfa ext/built-in.o
+ .text.ecp_normalize_jac_many
+                0x0000000000000000      0x2b5 ext/built-in.o
+ .text.ecp_select_comb
+                0x0000000000000000       0x94 ext/built-in.o
+ .text.mbedtls_ecp_curve_list
+                0x0000000000000000        0xa ext/built-in.o
+ .text.mbedtls_ecp_grp_id_list
+                0x0000000000000000       0x31 ext/built-in.o
+ .text.mbedtls_ecp_curve_info_from_grp_id
+                0x0000000000000000       0x23 ext/built-in.o
+ .text.mbedtls_ecp_curve_info_from_tls_id
+                0x0000000000000000       0x1f ext/built-in.o
+ .text.mbedtls_ecp_curve_info_from_name
+                0x0000000000000000       0x2d ext/built-in.o
+ .text.mbedtls_ecp_point_init
+                0x0000000000000000       0x31 ext/built-in.o
+ .text.mbedtls_ecp_group_init
+                0x0000000000000000       0x19 ext/built-in.o
+ .text.mbedtls_ecp_keypair_init
+                0x0000000000000000       0x34 ext/built-in.o
+ .text.mbedtls_ecp_point_free
+                0x0000000000000000       0x31 ext/built-in.o
+ .text.mbedtls_ecp_group_free
+                0x0000000000000000       0x83 ext/built-in.o
+ .text.mbedtls_ecp_keypair_free
+                0x0000000000000000       0x34 ext/built-in.o
+ .text.mbedtls_ecp_copy
+                0x0000000000000000       0x49 ext/built-in.o
+ .text.mbedtls_ecp_group_copy
+                0x0000000000000000       0x11 ext/built-in.o
+ .text.mbedtls_ecp_set_zero
+                0x0000000000000000       0x38 ext/built-in.o
+ .text.ecp_add_mixed
+                0x0000000000000000      0x506 ext/built-in.o
+ .text.ecp_mul_comb
+                0x0000000000000000      0x78c ext/built-in.o
+ .text.mbedtls_ecp_is_zero
+                0x0000000000000000       0x1d ext/built-in.o
+ .text.mbedtls_ecp_point_cmp
+                0x0000000000000000       0x4a ext/built-in.o
+ .text.mbedtls_ecp_point_read_string
+                0x0000000000000000       0x53 ext/built-in.o
+ .text.mbedtls_ecp_point_write_binary
+                0x0000000000000000       0xe4 ext/built-in.o
+ .text.mbedtls_ecp_point_read_binary
+                0x0000000000000000       0xa2 ext/built-in.o
+ .text.mbedtls_ecp_tls_read_point
+                0x0000000000000000       0x42 ext/built-in.o
+ .text.mbedtls_ecp_tls_write_point
+                0x0000000000000000       0x40 ext/built-in.o
+ .text.mbedtls_ecp_tls_read_group
+                0x0000000000000000       0x68 ext/built-in.o
+ .text.mbedtls_ecp_tls_write_group
+                0x0000000000000000       0x44 ext/built-in.o
+ .text.mbedtls_ecp_check_pubkey
+                0x0000000000000000      0x1f9 ext/built-in.o
+ .text.mbedtls_ecp_check_privkey
+                0x0000000000000000       0x46 ext/built-in.o
+ .text.mbedtls_ecp_mul
+                0x0000000000000000       0x8e ext/built-in.o
+ .text.mbedtls_ecp_mul_shortcuts
+                0x0000000000000000       0x7f ext/built-in.o
+ .text.mbedtls_ecp_muladd
+                0x0000000000000000       0x84 ext/built-in.o
+ .text.mbedtls_ecp_gen_keypair_base
+                0x0000000000000000       0xc3 ext/built-in.o
+ .text.mbedtls_ecp_gen_keypair
+                0x0000000000000000       0x21 ext/built-in.o
+ .text.mbedtls_ecp_gen_key
+                0x0000000000000000       0x35 ext/built-in.o
+ .text.mbedtls_ecp_check_pub_priv
+                0x0000000000000000      0x12c ext/built-in.o
+ .text.add32    0x0000000000000000       0x12 ext/built-in.o
+ .text.sub32    0x0000000000000000       0x10 ext/built-in.o
+ .text.ecp_mod_p256
+                0x0000000000000000      0x5ce ext/built-in.o
+ .text.mbedtls_ecp_group_load
+                0x0000000000000000       0xdb ext/built-in.o
+ .text.entropy_update
+                0x0000000000000000       0x62 ext/built-in.o
+ .text.entropy_gather_internal
+                0x0000000000000000       0xae ext/built-in.o
+ .text.mbedtls_entropy_init
+                0x0000000000000000       0x26 ext/built-in.o
+ .text.mbedtls_entropy_free
+                0x0000000000000000       0x18 ext/built-in.o
+ .text.mbedtls_entropy_add_source
+                0x0000000000000000       0x3d ext/built-in.o
+ .text.mbedtls_entropy_update_manual
+                0x0000000000000000       0x1a ext/built-in.o
+ .text.mbedtls_entropy_gather
+                0x0000000000000000        0xc ext/built-in.o
+ .text.mbedtls_entropy_func
+                0x0000000000000000       0xdb ext/built-in.o
+ .text.mbedtls_hmac_drbg_init
+                0x0000000000000000       0x14 ext/built-in.o
+ .text.mbedtls_hmac_drbg_update
+                0x0000000000000000       0xaf ext/built-in.o
+ .text.mbedtls_hmac_drbg_seed_buf
+                0x0000000000000000       0x6e ext/built-in.o
+ .text.mbedtls_hmac_drbg_reseed
+                0x0000000000000000       0xa6 ext/built-in.o
+ .text.mbedtls_hmac_drbg_seed
+                0x0000000000000000       0x8f ext/built-in.o
+ .text.mbedtls_hmac_drbg_set_prediction_resistance
+                0x0000000000000000        0xe ext/built-in.o
+ .text.mbedtls_hmac_drbg_set_entropy_len
+                0x0000000000000000        0xe ext/built-in.o
+ .text.mbedtls_hmac_drbg_set_reseed_interval
+                0x0000000000000000        0xe ext/built-in.o
+ .text.mbedtls_hmac_drbg_random_with_add
+                0x0000000000000000       0xf0 ext/built-in.o
+ .text.mbedtls_hmac_drbg_random
+                0x0000000000000000       0x1a ext/built-in.o
+ .text.mbedtls_hmac_drbg_free
+                0x0000000000000000       0x26 ext/built-in.o
+ .text.mbedtls_md_list
+                0x0000000000000000        0xa ext/built-in.o
+ .text.mbedtls_md_info_from_string
+                0x0000000000000000       0x40 ext/built-in.o
+ .text.mbedtls_md_info_from_type
+                0x0000000000000000       0x1e ext/built-in.o
+ .text.mbedtls_md_init
+                0x0000000000000000       0x14 ext/built-in.o
+ .text.mbedtls_md_free
+                0x0000000000000000       0x53 ext/built-in.o
+ .text.mbedtls_md_clone
+                0x0000000000000000       0x40 ext/built-in.o
+ .text.mbedtls_md_setup
+                0x0000000000000000       0x5e ext/built-in.o
+ .text.mbedtls_md_init_ctx
+                0x0000000000000000       0x15 ext/built-in.o
+ .text.mbedtls_md_starts
+                0x0000000000000000       0x20 ext/built-in.o
+ .text.mbedtls_md_update
+                0x0000000000000000       0x28 ext/built-in.o
+ .text.mbedtls_md_finish
+                0x0000000000000000       0x24 ext/built-in.o
+ .text.mbedtls_md
+                0x0000000000000000       0x22 ext/built-in.o
+ .text.mbedtls_md_hmac_starts
+                0x0000000000000000       0xe4 ext/built-in.o
+ .text.mbedtls_md_hmac_update
+                0x0000000000000000       0x2e ext/built-in.o
+ .text.mbedtls_md_hmac_finish
+                0x0000000000000000       0x71 ext/built-in.o
+ .text.mbedtls_md_hmac_reset
+                0x0000000000000000       0x3d ext/built-in.o
+ .text.mbedtls_md_hmac
+                0x0000000000000000       0x6f ext/built-in.o
+ .text.mbedtls_md_process
+                0x0000000000000000       0x24 ext/built-in.o
+ .text.mbedtls_md_get_size
+                0x0000000000000000       0x11 ext/built-in.o
+ .text.mbedtls_md_get_type
+                0x0000000000000000       0x10 ext/built-in.o
+ .text.mbedtls_md_get_name
+                0x0000000000000000       0x11 ext/built-in.o
+ .text.sha224_process_wrap
+                0x0000000000000000        0x9 ext/built-in.o
+ .text.sha224_clone_wrap
+                0x0000000000000000        0x9 ext/built-in.o
+ .text.sha224_ctx_free
+                0x0000000000000000       0x1b ext/built-in.o
+ .text.sha224_ctx_alloc
+                0x0000000000000000       0x23 ext/built-in.o
+ .text.sha224_wrap
+                0x0000000000000000       0x18 ext/built-in.o
+ .text.sha256_wrap
+                0x0000000000000000       0x18 ext/built-in.o
+ .text.sha224_finish_wrap
+                0x0000000000000000        0x9 ext/built-in.o
+ .text.sha224_update_wrap
+                0x0000000000000000        0x9 ext/built-in.o
+ .text.sha224_starts_wrap
+                0x0000000000000000       0x11 ext/built-in.o
+ .text.sha256_starts_wrap
+                0x0000000000000000       0x11 ext/built-in.o
+ .text.verify_header
+                0x0000000000000000       0x47 ext/built-in.o
+ .text.verify_chain
+                0x0000000000000000       0x49 ext/built-in.o
+ .text.buffer_alloc_calloc
+                0x0000000000000000      0x148 ext/built-in.o
+ .text.buffer_alloc_free
+                0x0000000000000000      0x16f ext/built-in.o
+ .text.mbedtls_memory_buffer_set_verify
+                0x0000000000000000        0xd ext/built-in.o
+ .text.mbedtls_memory_buffer_alloc_verify
+                0x0000000000000000        0x9 ext/built-in.o
+ .text.mbedtls_memory_buffer_alloc_init
+                0x0000000000000000       0x7b ext/built-in.o
+ .text.mbedtls_memory_buffer_alloc_free
+                0x0000000000000000       0x15 ext/built-in.o
+ .text.mbedtls_oid_get_sig_alg_desc
+                0x0000000000000000        0xa ext/built-in.o
+ .text.mbedtls_oid_get_sig_alg
+                0x0000000000000000        0xa ext/built-in.o
+ .text.mbedtls_oid_get_oid_by_sig_alg
+                0x0000000000000000        0xa ext/built-in.o
+ .text.mbedtls_oid_get_pk_alg
+                0x0000000000000000       0x4b ext/built-in.o
+ .text.mbedtls_oid_get_oid_by_pk_alg
+                0x0000000000000000       0x33 ext/built-in.o
+ .text.mbedtls_oid_get_ec_grp
+                0x0000000000000000       0x4b ext/built-in.o
+ .text.mbedtls_oid_get_oid_by_ec_grp
+                0x0000000000000000       0x33 ext/built-in.o
+ .text.mbedtls_oid_get_cipher_alg
+                0x0000000000000000       0x4b ext/built-in.o
+ .text.mbedtls_oid_get_md_alg
+                0x0000000000000000       0x4b ext/built-in.o
+ .text.mbedtls_oid_get_oid_by_md
+                0x0000000000000000       0x33 ext/built-in.o
+ .text.mbedtls_oid_get_numeric_string
+                0x0000000000000000       0xb8 ext/built-in.o
+ .text.mbedtls_pk_init
+                0x0000000000000000       0x19 ext/built-in.o
+ .text.mbedtls_pk_free
+                0x0000000000000000       0x2a ext/built-in.o
+ .text.mbedtls_pk_info_from_type
+                0x0000000000000000       0x1e ext/built-in.o
+ .text.mbedtls_pk_setup
+                0x0000000000000000       0x36 ext/built-in.o
+ .text.mbedtls_pk_can_do
+                0x0000000000000000       0x20 ext/built-in.o
+ .text.mbedtls_pk_verify
+                0x0000000000000000       0x84 ext/built-in.o
+ .text.mbedtls_pk_verify_ext
+                0x0000000000000000       0x97 ext/built-in.o
+ .text.mbedtls_pk_sign
+                0x0000000000000000       0x9c ext/built-in.o
+ .text.mbedtls_pk_decrypt
+                0x0000000000000000       0x52 ext/built-in.o
+ .text.mbedtls_pk_encrypt
+                0x0000000000000000       0x52 ext/built-in.o
+ .text.mbedtls_pk_check_pair
+                0x0000000000000000       0x57 ext/built-in.o
+ .text.mbedtls_pk_get_bitlen
+                0x0000000000000000       0x20 ext/built-in.o
+ .text.mbedtls_pk_debug
+                0x0000000000000000       0x2f ext/built-in.o
+ .text.mbedtls_pk_get_name
+                0x0000000000000000       0x1a ext/built-in.o
+ .text.mbedtls_pk_get_type
+                0x0000000000000000       0x16 ext/built-in.o
+ .text.eckey_can_do
+                0x0000000000000000       0x14 ext/built-in.o
+ .text.eckey_get_bitlen
+                0x0000000000000000        0xb ext/built-in.o
+ .text.eckey_debug
+                0x0000000000000000       0x21 ext/built-in.o
+ .text.eckeydh_can_do
+                0x0000000000000000       0x14 ext/built-in.o
+ .text.eckey_free_wrap
+                0x0000000000000000       0x1b ext/built-in.o
+ .text.eckey_alloc_wrap
+                0x0000000000000000       0x26 ext/built-in.o
+ .text.eckey_check_pair
+                0x0000000000000000        0x9 ext/built-in.o
+ .text.pk_use_ecparams
+                0x0000000000000000       0x4b ext/built-in.o
+ .text.pk_get_pk_alg
+                0x0000000000000000       0x7c ext/built-in.o
+ .text.pk_parse_key_sec1_der
+                0x0000000000000000      0x234 ext/built-in.o
+ .text.mbedtls_pk_parse_subpubkey
+                0x0000000000000000      0x10f ext/built-in.o
+ .text.mbedtls_pk_parse_key
+                0x0000000000000000      0x13e ext/built-in.o
+ .text.mbedtls_pk_parse_public_key
+                0x0000000000000000       0x1f ext/built-in.o
+ .text.platform_calloc_uninit
+                0x0000000000000000        0x7 ext/built-in.o
+ .text.platform_printf_uninit
+                0x0000000000000000        0x7 ext/built-in.o
+ .text.platform_exit_uninit
+                0x0000000000000000        0x5 ext/built-in.o
+ .text.platform_free_uninit
+                0x0000000000000000        0x5 ext/built-in.o
+ .text.mbedtls_platform_set_calloc_free
+                0x0000000000000000       0x17 ext/built-in.o
+ .text.mbedtls_platform_set_printf
+                0x0000000000000000        0xf ext/built-in.o
+ .text.mbedtls_platform_set_exit
+                0x0000000000000000        0xf ext/built-in.o
+ .text.mbedtls_platform_setup
+                0x0000000000000000        0x7 ext/built-in.o
+ .text.mbedtls_platform_teardown
+                0x0000000000000000        0x5 ext/built-in.o
+ .text.mbedtls_sha256_init
+                0x0000000000000000       0x14 ext/built-in.o
+ .text.mbedtls_sha256_free
+                0x0000000000000000       0x19 ext/built-in.o
+ .text.mbedtls_sha256_clone
+                0x0000000000000000       0x16 ext/built-in.o
+ .text.mbedtls_sha256_starts
+                0x0000000000000000       0x91 ext/built-in.o
+ .text.mbedtls_sha256_process
+                0x0000000000000000      0xd9c ext/built-in.o
+ .text.mbedtls_sha256_update.part.0
+                0x0000000000000000       0xa3 ext/built-in.o
+ .text.mbedtls_sha256_update
+                0x0000000000000000       0x18 ext/built-in.o
+ .text.mbedtls_sha256_finish
+                0x0000000000000000      0x196 ext/built-in.o
+ .text.mbedtls_sha256
+                0x0000000000000000       0x42 ext/built-in.o
+ .text.mbedtls_ssl_list_ciphersuites
+                0x0000000000000000        0xa ext/built-in.o
+ .text.mbedtls_ssl_ciphersuite_from_string
+                0x0000000000000000       0x37 ext/built-in.o
+ .text.mbedtls_ssl_ciphersuite_from_id
+                0x0000000000000000       0x23 ext/built-in.o
+ .text.mbedtls_ssl_get_ciphersuite_name
+                0x0000000000000000       0x1c ext/built-in.o
+ .text.mbedtls_ssl_get_ciphersuite_id
+                0x0000000000000000       0x18 ext/built-in.o
+ .text.mbedtls_ssl_get_ciphersuite_sig_pk_alg
+                0x0000000000000000       0x38 ext/built-in.o
+ .text.mbedtls_ssl_get_ciphersuite_sig_alg
+                0x0000000000000000       0x26 ext/built-in.o
+ .text.mbedtls_ssl_handshake_client_step
+                0x0000000000000000      0xca3 ext/built-in.o
+ .text.ssl_cookie_hmac
+                0x0000000000000000       0x81 ext/built-in.o
+ .text.mbedtls_ssl_cookie_init
+                0x0000000000000000       0x21 ext/built-in.o
+ .text.mbedtls_ssl_cookie_set_timeout
+                0x0000000000000000        0xe ext/built-in.o
+ .text.mbedtls_ssl_cookie_free
+                0x0000000000000000       0x22 ext/built-in.o
+ .text.mbedtls_ssl_cookie_setup
+                0x0000000000000000       0x5e ext/built-in.o
+ .text.mbedtls_ssl_cookie_write
+                0x0000000000000000       0x9f ext/built-in.o
+ .text.mbedtls_ssl_cookie_check
+                0x0000000000000000       0x86 ext/built-in.o
+ .text.mbedtls_ssl_set_client_transport_id
+                0x0000000000000000       0x5e ext/built-in.o
+ .text.mbedtls_ssl_conf_dtls_cookies
+                0x0000000000000000       0x1a ext/built-in.o
+ .text.mbedtls_ssl_handshake_server_step
+                0x0000000000000000      0xd16 ext/built-in.o
+ .text.mbedtls_zeroize
+                0x0000000000000000       0x11 ext/built-in.o
+ .text.ssl_set_timer
+                0x0000000000000000       0x19 ext/built-in.o
+ .text.ssl_flight_free
+                0x0000000000000000       0x2b ext/built-in.o
+ .text.ssl_cookie_write_dummy
+                0x0000000000000000        0xa ext/built-in.o
+ .text.ssl_cookie_check_dummy
+                0x0000000000000000        0xa ext/built-in.o
+ .text.ssl_swap_epochs
+                0x0000000000000000       0x8a ext/built-in.o
+ .text.ssl_calc_finished_tls_sha256
+                0x0000000000000000       0xa0 ext/built-in.o
+ .text.ssl_calc_verify_tls_sha256
+                0x0000000000000000       0x3d ext/built-in.o
+ .text.ssl_update_checksum_sha256
+                0x0000000000000000       0x17 ext/built-in.o
+ .text.ssl_update_checksum_start
+                0x0000000000000000        0x9 ext/built-in.o
+ .text.mbedtls_ssl_hdr_len.isra.0
+                0x0000000000000000       0x15 ext/built-in.o
+ .text.tls_prf_sha256
+                0x0000000000000000      0x1d3 ext/built-in.o
+ .text.mbedtls_ssl_derive_keys
+                0x0000000000000000      0x3fd ext/built-in.o
+ .text.mbedtls_ssl_flush_output
+                0x0000000000000000       0xb6 ext/built-in.o
+ .text.mbedtls_ssl_recv_flight_completed
+                0x0000000000000000       0x65 ext/built-in.o
+ .text.mbedtls_ssl_send_flight_completed
+                0x0000000000000000       0x40 ext/built-in.o
+ .text.mbedtls_ssl_update_handshake_status
+                0x0000000000000000       0x41 ext/built-in.o
+ .text.mbedtls_ssl_dtls_replay_check
+                0x0000000000000000       0xc3 ext/built-in.o
+ .text.mbedtls_ssl_dtls_replay_update
+                0x0000000000000000      0x123 ext/built-in.o
+ .text.mbedtls_ssl_parse_certificate
+                0x0000000000000000       0x34 ext/built-in.o
+ .text.mbedtls_ssl_write_certificate
+                0x0000000000000000        0x9 ext/built-in.o
+ .text.mbedtls_ssl_optimize_checksum
+                0x0000000000000000       0x1e ext/built-in.o
+ .text.mbedtls_ssl_reset_checksum
+                0x0000000000000000       0x1a ext/built-in.o
+ .text.mbedtls_ssl_session_init
+                0x0000000000000000       0x14 ext/built-in.o
+ .text.mbedtls_ssl_init
+                0x0000000000000000       0x17 ext/built-in.o
+ .text.mbedtls_ssl_conf_endpoint
+                0x0000000000000000       0x19 ext/built-in.o
+ .text.mbedtls_ssl_conf_transport
+                0x0000000000000000       0x1c ext/built-in.o
+ .text.mbedtls_ssl_conf_dtls_anti_replay
+                0x0000000000000000       0x1c ext/built-in.o
+ .text.mbedtls_ssl_conf_handshake_timeout
+                0x0000000000000000       0x14 ext/built-in.o
+ .text.mbedtls_ssl_conf_authmode
+                0x0000000000000000       0x20 ext/built-in.o
+ .text.mbedtls_ssl_conf_rng
+                0x0000000000000000       0x14 ext/built-in.o
+ .text.mbedtls_ssl_conf_dbg
+                0x0000000000000000       0x14 ext/built-in.o
+ .text.mbedtls_ssl_set_bio
+                0x0000000000000000       0x20 ext/built-in.o
+ .text.mbedtls_ssl_conf_read_timeout
+                0x0000000000000000        0xe ext/built-in.o
+ .text.mbedtls_ssl_set_timer_cb
+                0x0000000000000000       0x20 ext/built-in.o
+ .text.mbedtls_ssl_conf_session_cache
+                0x0000000000000000       0x1a ext/built-in.o
+ .text.mbedtls_ssl_conf_ciphersuites
+                0x0000000000000000       0x16 ext/built-in.o
+ .text.mbedtls_ssl_conf_ciphersuites_for_version
+                0x0000000000000000       0x1c ext/built-in.o
+ .text.mbedtls_ssl_set_hs_ecjpake_password
+                0x0000000000000000       0x34 ext/built-in.o
+ .text.mbedtls_ssl_conf_curves
+                0x0000000000000000        0xe ext/built-in.o
+ .text.mbedtls_ssl_conf_max_version
+                0x0000000000000000       0x14 ext/built-in.o
+ .text.mbedtls_ssl_conf_min_version
+                0x0000000000000000       0x14 ext/built-in.o
+ .text.mbedtls_ssl_conf_cert_req_ca_list
+                0x0000000000000000       0x20 ext/built-in.o
+ .text.mbedtls_ssl_conf_max_frag_len
+                0x0000000000000000       0x3c ext/built-in.o
+ .text.mbedtls_ssl_conf_legacy_renegotiation
+                0x0000000000000000       0x1e ext/built-in.o
+ .text.mbedtls_ssl_conf_export_keys_cb
+                0x0000000000000000       0x14 ext/built-in.o
+ .text.mbedtls_ssl_get_bytes_avail
+                0x0000000000000000       0x13 ext/built-in.o
+ .text.mbedtls_ssl_get_verify_result
+                0x0000000000000000       0x1c ext/built-in.o
+ .text.mbedtls_ssl_get_ciphersuite
+                0x0000000000000000       0x20 ext/built-in.o
+ .text.mbedtls_ssl_get_version
+                0x0000000000000000       0x3f ext/built-in.o
+ .text.mbedtls_ssl_get_record_expansion
+                0x0000000000000000       0x57 ext/built-in.o
+ .text.mbedtls_ssl_get_max_frag_len
+                0x0000000000000000       0x33 ext/built-in.o
+ .text.mbedtls_ssl_handshake_step
+                0x0000000000000000       0x41 ext/built-in.o
+ .text.mbedtls_ssl_handshake
+                0x0000000000000000       0x2f ext/built-in.o
+ .text.mbedtls_ssl_transform_free
+                0x0000000000000000       0x4e ext/built-in.o
+ .text.mbedtls_ssl_handshake_free
+                0x0000000000000000       0x88 ext/built-in.o
+ .text.ssl_handshake_wrapup_free_hs_transform
+                0x0000000000000000       0x4a ext/built-in.o
+ .text.mbedtls_ssl_session_free
+                0x0000000000000000       0x17 ext/built-in.o
+ .text.mbedtls_ssl_handshake_wrapup
+                0x0000000000000000       0x81 ext/built-in.o
+ .text.ssl_handshake_init
+                0x0000000000000000      0x198 ext/built-in.o
+ .text.mbedtls_ssl_setup
+                0x0000000000000000       0xe2 ext/built-in.o
+ .text.mbedtls_ssl_set_session
+                0x0000000000000000       0x5b ext/built-in.o
+ .text.mbedtls_ssl_session_reset
+                0x0000000000000000      0x160 ext/built-in.o
+ .text.mbedtls_ssl_get_session
+                0x0000000000000000       0x4b ext/built-in.o
+ .text.mbedtls_ssl_free
+                0x0000000000000000       0xdb ext/built-in.o
+ .text.mbedtls_ssl_config_init
+                0x0000000000000000       0x14 ext/built-in.o
+ .text.mbedtls_ssl_config_defaults
+                0x0000000000000000       0xc1 ext/built-in.o
+ .text.mbedtls_ssl_config_free
+                0x0000000000000000       0x11 ext/built-in.o
+ .text.mbedtls_ssl_md_alg_from_hash
+                0x0000000000000000       0x1e ext/built-in.o
+ .text.mbedtls_ssl_hash_from_md_alg
+                0x0000000000000000       0x18 ext/built-in.o
+ .text.mbedtls_ssl_check_curve
+                0x0000000000000000       0x28 ext/built-in.o
+ .text.mbedtls_ssl_write_version
+                0x0000000000000000       0x32 ext/built-in.o
+ .text.mbedtls_ssl_write_record
+                0x0000000000000000      0x3cf ext/built-in.o
+ .text.mbedtls_ssl_resend
+                0x0000000000000000       0xc1 ext/built-in.o
+ .text.mbedtls_ssl_fetch_input
+                0x0000000000000000      0x1f9 ext/built-in.o
+ .text.mbedtls_ssl_prepare_handshake_record
+                0x0000000000000000      0x3c6 ext/built-in.o
+ .text.mbedtls_ssl_handle_message_type
+                0x0000000000000000       0x5b ext/built-in.o
+ .text.mbedtls_ssl_send_alert_message
+                0x0000000000000000       0x4a ext/built-in.o
+ .text.mbedtls_ssl_send_fatal_handshake_failure
+                0x0000000000000000       0x14 ext/built-in.o
+ .text.mbedtls_ssl_close_notify
+                0x0000000000000000       0x3c ext/built-in.o
+ .text.mbedtls_ssl_write_change_cipher_spec
+                0x0000000000000000       0x2c ext/built-in.o
+ .text.mbedtls_ssl_write_finished
+                0x0000000000000000      0x120 ext/built-in.o
+ .text.mbedtls_ssl_write
+                0x0000000000000000       0x8e ext/built-in.o
+ .text.mbedtls_ssl_read_version
+                0x0000000000000000       0x48 ext/built-in.o
+ .text.mbedtls_ssl_read_record_layer
+                0x0000000000000000      0x449 ext/built-in.o
+ .text.mbedtls_ssl_read_record
+                0x0000000000000000       0x54 ext/built-in.o
+ .text.mbedtls_ssl_parse_change_cipher_spec
+                0x0000000000000000       0xd3 ext/built-in.o
+ .text.mbedtls_ssl_parse_finished
+                0x0000000000000000       0xfc ext/built-in.o
+ .text.mbedtls_ssl_read
+                0x0000000000000000      0x133 ext/built-in.o
+ .text.mbedtls_ssl_set_calc_verify_md
+                0x0000000000000000       0x2d ext/built-in.o
+ .text.jsmn_parse
+                0x0000000000000000      0x3e8 ext/built-in.o
+ .text.jsmn_init
+                0x0000000000000000       0x1c ext/built-in.o
+ .text._atob    0x0000000000000000      0x10f ext/built-in.o
+ .text.atob     0x0000000000000000       0x67 ext/built-in.o
+ .text.strcspn  0x0000000000000000       0x28 ext/built-in.o
+ .text.vsscanf  0x0000000000000000      0x2e6 ext/built-in.o
+ .text.sscanf   0x0000000000000000       0x13 ext/built-in.o
+ .text.jsoneq   0x0000000000000000       0x43 ext/built-in.o
+ .text.parseUnsignedInteger32Value
+                0x0000000000000000       0x35 ext/built-in.o
+ .text.parseUnsignedInteger16Value
+                0x0000000000000000       0x35 ext/built-in.o
+ .text.parseUnsignedInteger8Value
+                0x0000000000000000       0x35 ext/built-in.o
+ .text.parseInteger32Value
+                0x0000000000000000       0x30 ext/built-in.o
+ .text.parseInteger16Value
+                0x0000000000000000       0x30 ext/built-in.o
+ .text.parseInteger8Value
+                0x0000000000000000       0x30 ext/built-in.o
+ .text.parseFloatValue
+                0x0000000000000000       0x30 ext/built-in.o
+ .text.parseDoubleValue
+                0x0000000000000000       0x30 ext/built-in.o
+ .text.parseBooleanValue
+                0x0000000000000000       0x6c ext/built-in.o
+ .text.parseStringValue
+                0x0000000000000000       0x3b ext/built-in.o
+ .text.aws_iot_mqtt_get_client_state
+                0x0000000000000000       0x11 ext/built-in.o
+ .text.aws_iot_mqtt_set_client_state
+                0x0000000000000000       0x26 ext/built-in.o
+ .text.aws_iot_mqtt_set_connect_params
+                0x0000000000000000       0xf4 ext/built-in.o
+ .text.aws_iot_mqtt_init
+                0x0000000000000000      0x154 ext/built-in.o
+ .text.aws_iot_mqtt_get_next_packet_id
+                0x0000000000000000       0x1d ext/built-in.o
+ .text.aws_iot_mqtt_is_client_connected
+                0x0000000000000000       0x1a ext/built-in.o
+ .text.aws_iot_is_autoreconnect_enabled
+                0x0000000000000000       0x11 ext/built-in.o
+ .text.aws_iot_mqtt_autoreconnect_set_status
+                0x0000000000000000       0x19 ext/built-in.o
+ .text.aws_iot_mqtt_set_disconnect_handler
+                0x0000000000000000       0x2b ext/built-in.o
+ .text.aws_iot_mqtt_get_network_disconnected_count
+                0x0000000000000000        0xb ext/built-in.o
+ .text.aws_iot_mqtt_reset_network_disconnected_count
+                0x0000000000000000        0xf ext/built-in.o
+ .text.aws_iot_mqtt_internal_write_len_to_buffer
+                0x0000000000000000       0x25 ext/built-in.o
+ .text.aws_iot_mqtt_internal_decode_remaining_length_from_buffer
+                0x0000000000000000       0x48 ext/built-in.o
+ .text.aws_iot_mqtt_internal_get_final_packet_length_from_remaining_length
+                0x0000000000000000       0x30 ext/built-in.o
+ .text.aws_iot_mqtt_internal_read_uint16_t
+                0x0000000000000000       0x1e ext/built-in.o
+ .text.aws_iot_mqtt_internal_write_uint_16
+                0x0000000000000000       0x23 ext/built-in.o
+ .text.aws_iot_mqtt_internal_read_char
+                0x0000000000000000       0x10 ext/built-in.o
+ .text.aws_iot_mqtt_internal_write_char
+                0x0000000000000000       0x11 ext/built-in.o
+ .text.aws_iot_mqtt_internal_write_utf8_string
+                0x0000000000000000       0x35 ext/built-in.o
+ .text.aws_iot_mqtt_internal_init_header
+                0x0000000000000000       0x83 ext/built-in.o
+ .text.aws_iot_mqtt_internal_send_packet
+                0x0000000000000000       0x80 ext/built-in.o
+ .text.aws_iot_mqtt_internal_cycle_read
+                0x0000000000000000      0x39f ext/built-in.o
+ .text.aws_iot_mqtt_internal_wait_for_read
+                0x0000000000000000       0x74 ext/built-in.o
+ .text.aws_iot_mqtt_internal_serialize_zero
+                0x0000000000000000       0x78 ext/built-in.o
+ .text.aws_iot_mqtt_connect
+                0x0000000000000000      0x419 ext/built-in.o
+ .text._aws_iot_mqtt_internal_disconnect
+                0x0000000000000000       0x7a ext/built-in.o
+ .text.aws_iot_mqtt_disconnect
+                0x0000000000000000       0x5b ext/built-in.o
+ .text.aws_iot_mqtt_attempt_reconnect
+                0x0000000000000000       0x61 ext/built-in.o
+ .text.aws_iot_mqtt_internal_serialize_ack
+                0x0000000000000000       0x9c ext/built-in.o
+ .text.aws_iot_mqtt_internal_deserialize_publish
+                0x0000000000000000      0x108 ext/built-in.o
+ .text.aws_iot_mqtt_internal_deserialize_ack
+                0x0000000000000000       0xa4 ext/built-in.o
+ .text.aws_iot_mqtt_publish
+                0x0000000000000000      0x213 ext/built-in.o
+ .text._aws_iot_mqtt_deserialize_suback.constprop.0
+                0x0000000000000000       0xe5 ext/built-in.o
+ .text._aws_iot_mqtt_serialize_subscribe.constprop.1
+                0x0000000000000000       0xd0 ext/built-in.o
+ .text.aws_iot_mqtt_subscribe
+                0x0000000000000000      0x1b4 ext/built-in.o
+ .text.aws_iot_mqtt_resubscribe
+                0x0000000000000000      0x186 ext/built-in.o
+ .text.aws_iot_mqtt_unsubscribe
+                0x0000000000000000      0x231 ext/built-in.o
+ .text._aws_iot_mqtt_handle_disconnect
+                0x0000000000000000       0x58 ext/built-in.o
+ .text.aws_iot_mqtt_yield
+                0x0000000000000000      0x294 ext/built-in.o
+ .text.aws_iot_shadow_internal_action
+                0x0000000000000000       0xdf ext/built-in.o
+ .text.aws_iot_shadow_reset_last_received_version
+                0x0000000000000000        0xf ext/built-in.o
+ .text.aws_iot_shadow_get_last_received_version
+                0x0000000000000000        0xa ext/built-in.o
+ .text.aws_iot_shadow_enable_discard_old_delta_msgs
+                0x0000000000000000        0xc ext/built-in.o
+ .text.aws_iot_shadow_disable_discard_old_delta_msgs
+                0x0000000000000000        0xc ext/built-in.o
+ .text.aws_iot_shadow_init
+                0x0000000000000000       0x8a ext/built-in.o
+ .text.aws_iot_shadow_connect
+                0x0000000000000000      0x10b ext/built-in.o
+ .text.aws_iot_shadow_register_delta
+                0x0000000000000000       0x3a ext/built-in.o
+ .text.aws_iot_shadow_yield
+                0x0000000000000000       0x2b ext/built-in.o
+ .text.aws_iot_shadow_disconnect
+                0x0000000000000000        0x9 ext/built-in.o
+ .text.aws_iot_shadow_update
+                0x0000000000000000       0x7c ext/built-in.o
+ .text.aws_iot_shadow_delete
+                0x0000000000000000       0x5e ext/built-in.o
+ .text.aws_iot_shadow_get
+                0x0000000000000000       0x5e ext/built-in.o
+ .text.aws_iot_shadow_set_autoreconnect_status
+                0x0000000000000000       0x10 ext/built-in.o
+ .text.convertDataToString
+                0x0000000000000000       0xef ext/built-in.o
+ .text.resetClientTokenSequenceNum
+                0x0000000000000000        0xf ext/built-in.o
+ .text.aws_iot_shadow_init_json_document
+                0x0000000000000000       0x3b ext/built-in.o
+ .text.aws_iot_shadow_add_desired
+                0x0000000000000000      0x140 ext/built-in.o
+ .text.aws_iot_shadow_add_reported
+                0x0000000000000000      0x140 ext/built-in.o
+ .text.FillWithClientTokenSize
+                0x0000000000000000       0x2c ext/built-in.o
+ .text.aws_iot_fill_with_client_token
+                0x0000000000000000       0x2b ext/built-in.o
+ .text.aws_iot_finalize_json_document
+                0x0000000000000000       0xca ext/built-in.o
+ .text.FillWithClientToken
+                0x0000000000000000       0x29 ext/built-in.o
+ .text.emptyJsonWithClientToken
+                0x0000000000000000       0x41 ext/built-in.o
+ .text.aws_iot_shadow_internal_delete_request_json
+                0x0000000000000000        0xc ext/built-in.o
+ .text.aws_iot_shadow_internal_get_request_json
+                0x0000000000000000        0xc ext/built-in.o
+ .text.isJsonValidAndParse
+                0x0000000000000000       0x51 ext/built-in.o
+ .text.isJsonKeyMatchingAndUpdateValue
+                0x0000000000000000      0x178 ext/built-in.o
+ .text.isReceivedJsonValid
+                0x0000000000000000       0x4b ext/built-in.o
+ .text.extractClientToken
+                0x0000000000000000       0xa9 ext/built-in.o
+ .text.extractVersionNumber
+                0x0000000000000000       0x50 ext/built-in.o
+ .text.shadow_delta_callback
+                0x0000000000000000       0xe9 ext/built-in.o
+ .text.findIndexOfSubscriptionList
+                0x0000000000000000       0x3b ext/built-in.o
+ .text.topicNameFromThingAndAction
+                0x0000000000000000       0xa2 ext/built-in.o
+ .text.unsubscribeFromAcceptedAndRejected
+                0x0000000000000000      0x11a ext/built-in.o
+ .text.AckStatusCallback
+                0x0000000000000000      0x17e ext/built-in.o
+ .text.initDeltaTokens
+                0x0000000000000000       0x29 ext/built-in.o
+ .text.registerJsonTokenOnDelta
+                0x0000000000000000       0xa2 ext/built-in.o
+ .text.initializeRecords
+                0x0000000000000000       0x43 ext/built-in.o
+ .text.isSubscriptionPresent
+                0x0000000000000000       0x9d ext/built-in.o
+ .text.subscribeToShadowActionAcks
+                0x0000000000000000      0x1aa ext/built-in.o
+ .text.incrementSubscriptionCnt
+                0x0000000000000000       0x88 ext/built-in.o
+ .text.publishToShadowAction
+                0x0000000000000000       0x6d ext/built-in.o
+ .text.getNextFreeIndexOfAckWaitList
+                0x0000000000000000       0x2e ext/built-in.o
+ .text.addToAckWaitList
+                0x0000000000000000       0x75 ext/built-in.o
+ .text.HandleExpiredResponseCallbacks
+                0x0000000000000000       0x58 ext/built-in.o
+ .text.left_ms  0x0000000000000000       0x20 ext/built-in.o
+ .text.has_timer_expired
+                0x0000000000000000       0x13 ext/built-in.o
+ .text.countdown_ms
+                0x0000000000000000       0x17 ext/built-in.o
+ .text.countdown_sec
+                0x0000000000000000       0x1b ext/built-in.o
+ .text.init_timer
+                0x0000000000000000       0x15 ext/built-in.o
+ .rodata        0x0000000000000000       0x5c ext/built-in.o
+ .rodata.RCON   0x0000000000000000       0x28 ext/built-in.o
+ .rodata.RT3    0x0000000000000000      0x400 ext/built-in.o
+ .rodata.RT2    0x0000000000000000      0x400 ext/built-in.o
+ .rodata.RT1    0x0000000000000000      0x400 ext/built-in.o
+ .rodata.RT0    0x0000000000000000      0x400 ext/built-in.o
+ .rodata.RSb    0x0000000000000000      0x100 ext/built-in.o
+ .rodata.FT3    0x0000000000000000      0x400 ext/built-in.o
+ .rodata.FT2    0x0000000000000000      0x400 ext/built-in.o
+ .rodata.FT1    0x0000000000000000      0x400 ext/built-in.o
+ .rodata.FT0    0x0000000000000000      0x400 ext/built-in.o
+ .rodata.FSb    0x0000000000000000      0x100 ext/built-in.o
+ .rodata.mbedtls_mpi_write_string.str1.1
+                0x0000000000000000       0x11 ext/built-in.o
+ .rodata.mbedtls_cipher_definitions
+                0x0000000000000000       0x38 ext/built-in.o
+ .rodata.aes_256_ccm_info
+                0x0000000000000000       0x20 ext/built-in.o
+ .rodata.aes_192_ccm_info
+                0x0000000000000000       0x20 ext/built-in.o
+ .rodata.aes_128_ccm_info
+                0x0000000000000000       0x20 ext/built-in.o
+ .rodata.ccm_aes_info
+                0x0000000000000000       0x18 ext/built-in.o
+ .rodata.aes_256_ecb_info
+                0x0000000000000000       0x20 ext/built-in.o
+ .rodata.aes_192_ecb_info
+                0x0000000000000000       0x20 ext/built-in.o
+ .rodata.aes_128_ecb_info
+                0x0000000000000000       0x20 ext/built-in.o
+ .rodata.aes_info
+                0x0000000000000000       0x18 ext/built-in.o
+ .rodata.ecjpake_id
+                0x0000000000000000        0x8 ext/built-in.o
+ .rodata.ecp_supported_curves
+                0x0000000000000000       0x18 ext/built-in.o
+ .rodata.secp256r1_n
+                0x0000000000000000       0x20 ext/built-in.o
+ .rodata.secp256r1_gy
+                0x0000000000000000       0x20 ext/built-in.o
+ .rodata.secp256r1_gx
+                0x0000000000000000       0x20 ext/built-in.o
+ .rodata.secp256r1_b
+                0x0000000000000000       0x20 ext/built-in.o
+ .rodata.secp256r1_p
+                0x0000000000000000       0x20 ext/built-in.o
+ .rodata.mbedtls_md_info_from_string.str1.1
+                0x0000000000000000        0xe ext/built-in.o
+ .rodata.supported_digests
+                0x0000000000000000        0xc ext/built-in.o
+ .rodata.mbedtls_sha256_info
+                0x0000000000000000       0x30 ext/built-in.o
+ .rodata.mbedtls_sha224_info
+                0x0000000000000000       0x30 ext/built-in.o
+ .rodata.mbedtls_oid_get_numeric_string.str1.1
+                0x0000000000000000        0xa ext/built-in.o
+ .rodata.oid_md_alg
+                0x0000000000000000       0x3c ext/built-in.o
+ .rodata.oid_cipher_alg
+                0x0000000000000000       0x3c ext/built-in.o
+ .rodata.oid_ecp_grp
+                0x0000000000000000       0x28 ext/built-in.o
+ .rodata.oid_pk_alg
+                0x0000000000000000       0x50 ext/built-in.o
+ .rodata.mbedtls_pk_get_name.str1.1
+                0x0000000000000000        0xb ext/built-in.o
+ .rodata.eckey_debug.str1.1
+                0x0000000000000000        0x8 ext/built-in.o
+ .rodata.mbedtls_eckeydh_info
+                0x0000000000000000       0x30 ext/built-in.o
+ .rodata.mbedtls_eckey_info
+                0x0000000000000000       0x30 ext/built-in.o
+ .rodata.sha256_padding
+                0x0000000000000000       0x40 ext/built-in.o
+ .rodata.K      0x0000000000000000      0x100 ext/built-in.o
+ .rodata.mbedtls_ssl_get_ciphersuite_name.str1.1
+                0x0000000000000000        0x8 ext/built-in.o
+ .rodata.ciphersuite_definitions
+                0x0000000000000000       0x50 ext/built-in.o
+ .rodata.ciphersuite_preference
+                0x0000000000000000        0x8 ext/built-in.o
+ .rodata.mbedtls_ssl_handshake_client_step
+                0x0000000000000000       0x40 ext/built-in.o
+ .rodata.mbedtls_ssl_handshake_server_step
+                0x0000000000000000       0x4c ext/built-in.o
+ .rodata.ssl_calc_finished_tls_sha256.str1.1
+                0x0000000000000000       0x20 ext/built-in.o
+ .rodata.mbedtls_ssl_derive_keys.str1.1
+                0x0000000000000000       0x1c ext/built-in.o
+ .rodata.mbedtls_ssl_get_version.str1.1
+                0x0000000000000000       0x29 ext/built-in.o
+ .rodata.CSWTCH.109
+                0x0000000000000000       0x10 ext/built-in.o
+ .rodata.mfl_code_to_length
+                0x0000000000000000       0x14 ext/built-in.o
+ .rodata.vsscanf.str1.1
+                0x0000000000000000       0x1a ext/built-in.o
+ .rodata.parseUnsignedInteger32Value.str1.1
+                0x0000000000000000        0x4 ext/built-in.o
+ .rodata.parseUnsignedInteger16Value.str1.1
+                0x0000000000000000        0x4 ext/built-in.o
+ .rodata.parseUnsignedInteger8Value.str1.1
+                0x0000000000000000        0x5 ext/built-in.o
+ .rodata.parseInteger32Value.str1.1
+                0x0000000000000000        0x4 ext/built-in.o
+ .rodata.parseInteger16Value.str1.1
+                0x0000000000000000        0x4 ext/built-in.o
+ .rodata.parseInteger8Value.str1.1
+                0x0000000000000000        0x5 ext/built-in.o
+ .rodata.parseFloatValue.str1.1
+                0x0000000000000000        0x3 ext/built-in.o
+ .rodata.parseDoubleValue.str1.1
+                0x0000000000000000        0x4 ext/built-in.o
+ .rodata.aws_iot_mqtt_set_connect_params.str1.1
+                0x0000000000000000       0x18 ext/built-in.o
+ .rodata.iotClientConnectParamsDefault
+                0x0000000000000000       0x3c ext/built-in.o
+ .rodata.iotMqttWillOptionsDefault
+                0x0000000000000000       0x18 ext/built-in.o
+ .rodata.iotClientInitParamsDefault
+                0x0000000000000000       0x30 ext/built-in.o
+ .rodata.aws_iot_mqtt_internal_init_header
+                0x0000000000000000       0x38 ext/built-in.o
+ .rodata.aws_iot_mqtt_connect.str1.1
+                0x0000000000000000        0x5 ext/built-in.o
+ .rodata.aws_iot_mqtt_connect
+                0x0000000000000000       0x18 ext/built-in.o
+ .rodata.aws_iot_shadow_connect.str1.1
+                0x0000000000000000       0x29 ext/built-in.o
+ .rodata.ShadowConnectParametersDefault
+                0x0000000000000000       0x10 ext/built-in.o
+ .rodata.ShadowInitParametersDefault
+                0x0000000000000000       0x1c ext/built-in.o
+ .rodata.convertDataToString.str1.1
+                0x0000000000000000       0x21 ext/built-in.o
+ .rodata.aws_iot_shadow_init_json_document.str1.1
+                0x0000000000000000        0xb ext/built-in.o
+ .rodata.aws_iot_shadow_add_desired.str1.1
+                0x0000000000000000       0x15 ext/built-in.o
+ .rodata.aws_iot_shadow_add_reported.str1.1
+                0x0000000000000000        0xd ext/built-in.o
+ .rodata.FillWithClientTokenSize.str1.1
+                0x0000000000000000        0x6 ext/built-in.o
+ .rodata.aws_iot_finalize_json_document.str1.1
+                0x0000000000000000       0x19 ext/built-in.o
+ .rodata.emptyJsonWithClientToken.str1.1
+                0x0000000000000000       0x11 ext/built-in.o
+ .rodata.isJsonKeyMatchingAndUpdateValue.str1.1
+                0x0000000000000000        0x9 ext/built-in.o
+ .rodata.extractVersionNumber.str1.1
+                0x0000000000000000        0x8 ext/built-in.o
+ .rodata.topicNameFromThingAndAction.str1.1
+                0x0000000000000000       0x59 ext/built-in.o
+ .rodata.AckStatusCallback.str1.1
+                0x0000000000000000       0x13 ext/built-in.o
+ .rodata.registerJsonTokenOnDelta.str1.1
+                0x0000000000000000       0x23 ext/built-in.o
+ .data          0x0000000000000000        0x0 ext/built-in.o
+ .data.one.1354
+                0x0000000000000000        0x4 ext/built-in.o
+ .data.mbedtls_exit
+                0x0000000000000000        0x4 ext/built-in.o
+ .data.mbedtls_printf
+                0x0000000000000000        0x4 ext/built-in.o
+ .data.mbedtls_free
+                0x0000000000000000        0x4 ext/built-in.o
+ .data.mbedtls_calloc
+                0x0000000000000000        0x4 ext/built-in.o
+ .data.ssl_preset_suiteb_curves
+                0x0000000000000000        0xc ext/built-in.o
+ .data.ssl_preset_suiteb_ciphersuites
+                0x0000000000000000        0xc ext/built-in.o
+ .data.shadowDiscardOldDeltaFlag
+                0x0000000000000000        0x1 ext/built-in.o
+ .bss           0x0000000000000000        0x0 ext/built-in.o
+ .bss.supported_init
+                0x0000000000000000        0x4 ext/built-in.o
+ .bss.init_done.1400
+                0x0000000000000000        0x4 ext/built-in.o
+ .bss.ecp_supported_grp_id
+                0x0000000000000000        0x8 ext/built-in.o
+ .bss.heap      0x0000000000000000       0x14 ext/built-in.o
+ .bss.pUsernameTemp
+                0x0000000000000000       0x19 ext/built-in.o
+ .bss.deleteAcceptedTopic
+                0x0000000000000000       0x50 ext/built-in.o
+ .bss.jsonTokenStruct
+                0x0000000000000000      0x780 ext/built-in.o
+ .bss.shadowJsonParser
+                0x0000000000000000        0xc ext/built-in.o
+ .bss.clientTokenNum
+                0x0000000000000000        0x4 ext/built-in.o
+ .bss.shadowJsonVersionNum
+                0x0000000000000000        0x4 ext/built-in.o
+ .bss.deltaTopicSubscribedFlag
+                0x0000000000000000        0x1 ext/built-in.o
+ .bss.tokenTableIndex
+                0x0000000000000000        0x4 ext/built-in.o
+ .bss.tokenTable
+                0x0000000000000000      0x780 ext/built-in.o
+ COMMON         0x0000000000000000      0xee8 ext/built-in.o
+ .text          0x0000000000000000        0x0 subsys/built-in.o
+ .text.net_buf_pool_get
+                0x0000000000000000       0x10 subsys/built-in.o
+ .text.net_buf_reset
+                0x0000000000000000       0x14 subsys/built-in.o
+ .text.net_buf_get
+                0x0000000000000000       0x46 subsys/built-in.o
+ .text.net_buf_put
+                0x0000000000000000       0x25 subsys/built-in.o
+ .text.net_buf_ref
+                0x0000000000000000        0xb subsys/built-in.o
+ .text.net_buf_clone
+                0x0000000000000000       0x57 subsys/built-in.o
+ .text.net_buf_simple_add_mem
+                0x0000000000000000       0x22 subsys/built-in.o
+ .text.net_buf_simple_add_le16
+                0x0000000000000000       0x2e subsys/built-in.o
+ .text.net_buf_simple_add_be16
+                0x0000000000000000       0x30 subsys/built-in.o
+ .text.net_buf_simple_add_le32
+                0x0000000000000000       0x26 subsys/built-in.o
+ .text.net_buf_simple_add_be32
+                0x0000000000000000       0x2e subsys/built-in.o
+ .text.net_buf_simple_push
+                0x0000000000000000       0x15 subsys/built-in.o
+ .text.net_buf_simple_push_le16
+                0x0000000000000000       0x2b subsys/built-in.o
+ .text.net_buf_simple_push_be16
+                0x0000000000000000       0x2d subsys/built-in.o
+ .text.net_buf_simple_push_u8
+                0x0000000000000000       0x19 subsys/built-in.o
+ .text.net_buf_simple_pull_u8
+                0x0000000000000000       0x18 subsys/built-in.o
+ .text.net_buf_simple_pull_le16
+                0x0000000000000000       0x19 subsys/built-in.o
+ .text.net_buf_simple_pull_be16
+                0x0000000000000000       0x1b subsys/built-in.o
+ .text.net_buf_simple_pull_le32
+                0x0000000000000000       0x18 subsys/built-in.o
+ .text.net_buf_simple_pull_be32
+                0x0000000000000000       0x1a subsys/built-in.o
+ .text.sys_slist_find_and_remove.constprop.7
+                0x0000000000000000       0x5a subsys/built-in.o
+ .text.net_if_get_by_link_addr
+                0x0000000000000000       0x3b subsys/built-in.o
+ .text.net_if_lookup_by_dev
+                0x0000000000000000       0x1f subsys/built-in.o
+ .text.net_if_get_first_by_type
+                0x0000000000000000       0x20 subsys/built-in.o
+ .text.net_if_ipv4_router_lookup
+                0x0000000000000000       0x2c subsys/built-in.o
+ .text.net_if_ipv4_router_add
+                0x0000000000000000       0x5f subsys/built-in.o
+ .text.net_if_ipv4_addr_rm
+                0x0000000000000000       0x34 subsys/built-in.o
+ .text.net_if_register_link_cb
+                0x0000000000000000       0x33 subsys/built-in.o
+ .text.net_if_unregister_link_cb
+                0x0000000000000000        0xc subsys/built-in.o
+ .text.net_if_get_by_index
+                0x0000000000000000       0x1a subsys/built-in.o
+ .text.net_if_get_by_iface
+                0x0000000000000000       0x10 subsys/built-in.o
+ .text.net_if_foreach
+                0x0000000000000000       0x24 subsys/built-in.o
+ .text.net_if_down
+                0x0000000000000000       0x4f subsys/built-in.o
+ .text.check_used_port
+                0x0000000000000000       0x84 subsys/built-in.o
+ .text.find_available_port
+                0x0000000000000000       0x47 subsys/built-in.o
+ .text.sendto.isra.18
+                0x0000000000000000       0xd2 subsys/built-in.o
+ .text.packet_received
+                0x0000000000000000       0xe6 subsys/built-in.o
+ .text.net_context_get
+                0x0000000000000000      0x140 subsys/built-in.o
+ .text.net_context_ref
+                0x0000000000000000       0x13 subsys/built-in.o
+ .text.net_context_unref
+                0x0000000000000000       0x50 subsys/built-in.o
+ .text.net_context_put
+                0x0000000000000000       0x45 subsys/built-in.o
+ .text.net_context_bind
+                0x0000000000000000       0xbd subsys/built-in.o
+ .text.net_context_listen
+                0x0000000000000000       0x18 subsys/built-in.o
+ .text.net_context_connect
+                0x0000000000000000       0xe8 subsys/built-in.o
+ .text.net_context_accept
+                0x0000000000000000       0x2c subsys/built-in.o
+ .text.net_context_send
+                0x0000000000000000       0x56 subsys/built-in.o
+ .text.net_context_sendto
+                0x0000000000000000       0x26 subsys/built-in.o
+ .text.net_context_recv
+                0x0000000000000000      0x116 subsys/built-in.o
+ .text.net_context_update_recv_wnd
+                0x0000000000000000        0xa subsys/built-in.o
+ .text.net_context_foreach
+                0x0000000000000000       0x49 subsys/built-in.o
+ .text.net_pkt_get
+                0x0000000000000000       0x8f subsys/built-in.o
+ .text.net_pkt_get_rx
+                0x0000000000000000       0x14 subsys/built-in.o
+ .text.net_pkt_get_tx
+                0x0000000000000000       0x14 subsys/built-in.o
+ .text.net_pkt_get_data
+                0x0000000000000000       0x46 subsys/built-in.o
+ .text.net_pkt_frag_ref
+                0x0000000000000000       0x14 subsys/built-in.o
+ .text.net_frag_linear_copy
+                0x0000000000000000       0x93 subsys/built-in.o
+ .text.net_frag_linearize
+                0x0000000000000000       0x8c subsys/built-in.o
+ .text.net_pkt_append
+                0x0000000000000000       0xd2 subsys/built-in.o
+ .text.net_frag_read_be16
+                0x0000000000000000       0x34 subsys/built-in.o
+ .text.net_frag_read_be32
+                0x0000000000000000       0x29 subsys/built-in.o
+ .text.net_pkt_insert
+                0x0000000000000000      0x14b subsys/built-in.o
+ .text.net_pkt_split
+                0x0000000000000000      0x116 subsys/built-in.o
+ .text.net_pkt_get_info
+                0x0000000000000000       0x3b subsys/built-in.o
+ .text.net_pkt_icmp_opt_data
+                0x0000000000000000       0x30 subsys/built-in.o
+ .text.net_pkt_tcp_data
+                0x0000000000000000       0x2a subsys/built-in.o
+ .text.net_pkt_clone
+                0x0000000000000000       0xe0 subsys/built-in.o
+ .text.net_proto2str
+                0x0000000000000000       0x35 subsys/built-in.o
+ .text.net_byte_to_hex
+                0x0000000000000000       0x4e subsys/built-in.o
+ .text.net_sprint_ll_addr_buf
+                0x0000000000000000       0x66 subsys/built-in.o
+ .text.net_addr_ntop
+                0x0000000000000000      0x22e subsys/built-in.o
+ .text.parse_ipv4
+                0x0000000000000000      0x108 subsys/built-in.o
+ .text.net_ipaddr_parse
+                0x0000000000000000       0x5d subsys/built-in.o
+ .text.net_eth_broadcast_addr
+                0x0000000000000000        0xa subsys/built-in.o
+ .text.net_icmpv4_send_echo_request
+                0x0000000000000000       0xe2 subsys/built-in.o
+ .text.net_icmpv4_unregister_handler
+                0x0000000000000000       0x4f subsys/built-in.o
+ .text.net_ipv4_create_raw
+                0x0000000000000000       0x87 subsys/built-in.o
+ .text.net_ipv4_create
+                0x0000000000000000       0x61 subsys/built-in.o
+ .text.net_ipv4_finalize_raw
+                0x0000000000000000       0x64 subsys/built-in.o
+ .text.net_ipv4_finalize
+                0x0000000000000000       0x25 subsys/built-in.o
+ .text.net_mgmt_add_event_callback
+                0x0000000000000000       0x2c subsys/built-in.o
+ .text.mgmt_event_wait_call
+                0x0000000000000000       0x9d subsys/built-in.o
+ .text.net_mgmt_del_event_callback
+                0x0000000000000000       0x79 subsys/built-in.o
+ .text.net_mgmt_event_wait
+                0x0000000000000000       0x1d subsys/built-in.o
+ .text.net_mgmt_event_wait_on_iface
+                0x0000000000000000       0x1f subsys/built-in.o
+ .text.net_udp_append_raw
+                0x0000000000000000       0x9a subsys/built-in.o
+ .text.net_udp_insert_raw
+                0x0000000000000000      0x101 subsys/built-in.o
+ .text.net_udp_set_hdr
+                0x0000000000000000       0xa0 subsys/built-in.o
+ .text.net_udp_append
+                0x0000000000000000       0x20 subsys/built-in.o
+ .text.net_udp_insert
+                0x0000000000000000       0x29 subsys/built-in.o
+ .text.net_udp_register
+                0x0000000000000000       0x28 subsys/built-in.o
+ .text.net_udp_unregister
+                0x0000000000000000        0x9 subsys/built-in.o
+ .text.net_conn_unregister
+                0x0000000000000000       0x39 subsys/built-in.o
+ .text.net_conn_change_callback
+                0x0000000000000000       0x38 subsys/built-in.o
+ .text.net_conn_register
+                0x0000000000000000      0x1ec subsys/built-in.o
+ .text.net_conn_foreach
+                0x0000000000000000       0x28 subsys/built-in.o
+ .text.syslog_hook_default
+                0x0000000000000000        0x5 subsys/built-in.o
+ .text.syslog_hook_install
+                0x0000000000000000        0xd subsys/built-in.o
+ .rodata.net_proto2str.str1.1
+                0x0000000000000000       0x20 subsys/built-in.o
+ .data          0x0000000000000000        0x0 subsys/built-in.o
+ .data.syslog_hook
+                0x0000000000000000        0x4 subsys/built-in.o
+ .bss           0x0000000000000000        0x0 subsys/built-in.o
+ .bss.routers   0x0000000000000000       0x38 subsys/built-in.o
+ .bss.contexts  0x0000000000000000      0x198 subsys/built-in.o
+ .text          0x0000000000000000        0x0 arch/built-in.o
+ .text.k_cpu_atomic_idle
+                0x0000000000000000       0x11 arch/built-in.o
+ .text._MsrWrite
+                0x0000000000000000       0x10 arch/built-in.o
+ .text._MsrRead
+                0x0000000000000000       0x10 arch/built-in.o
+ .text._arch_isr_direct_header
+                0x0000000000000000        0xb arch/built-in.o
+ .text._arch_isr_direct_footer
+                0x0000000000000000       0x45 arch/built-in.o
+ .text.sys_cache_flush
+                0x0000000000000000        0x3 arch/built-in.o
+ .text._x86_mmu_buffer_validate
+                0x0000000000000000      0x112 arch/built-in.o
+ .rodata._default_esf
+                0x0000000000000000       0x30 arch/built-in.o
+ .data          0x0000000000000000        0x0 arch/built-in.o
+ .bss           0x0000000000000000        0x0 arch/built-in.o
+ .text          0x0000000000000000        0x0 kernel/lib.a(device.o)
+ .data          0x0000000000000000        0x0 kernel/lib.a(device.o)
+ .bss           0x0000000000000000        0x0 kernel/lib.a(device.o)
+ .text.device_busy_set
+                0x0000000000000000        0x5 kernel/lib.a(device.o)
+ .text.device_busy_clear
+                0x0000000000000000        0x5 kernel/lib.a(device.o)
+ .text          0x0000000000000000        0x0 kernel/lib.a(errno.o)
+ .data          0x0000000000000000        0x0 kernel/lib.a(errno.o)
+ .bss           0x0000000000000000        0x0 kernel/lib.a(errno.o)
+ .text          0x0000000000000000        0x0 kernel/lib.a(init.o)
+ .data          0x0000000000000000        0x0 kernel/lib.a(init.o)
+ .bss           0x0000000000000000        0x0 kernel/lib.a(init.o)
+ .text.k_call_stacks_analyze
+                0x0000000000000000        0x5 kernel/lib.a(init.o)
+ .text._bss_zero
+                0x0000000000000000       0x1f kernel/lib.a(init.o)
+ .text._data_copy
+                0x0000000000000000       0x22 kernel/lib.a(init.o)
+ .text.main     0x0000000000000000        0x5 kernel/lib.a(init.o)
+ .rodata._main_thread
+                0x0000000000000000        0x4 kernel/lib.a(init.o)
+ .text          0x0000000000000000        0x0 kernel/lib.a(mem_slab.o)
+ .data          0x0000000000000000        0x0 kernel/lib.a(mem_slab.o)
+ .bss           0x0000000000000000        0x0 kernel/lib.a(mem_slab.o)
+ .text.k_mem_slab_init
+                0x0000000000000000       0x46 kernel/lib.a(mem_slab.o)
+ .text          0x0000000000000000        0x0 kernel/lib.a(poll.o)
+ .data          0x0000000000000000        0x0 kernel/lib.a(poll.o)
+ .bss           0x0000000000000000        0x0 kernel/lib.a(poll.o)
+ .text.k_poll_signal_init
+                0x0000000000000000       0x14 kernel/lib.a(poll.o)
+ .text.k_poll_signal
+                0x0000000000000000       0x63 kernel/lib.a(poll.o)
+ .text          0x0000000000000000        0x0 kernel/lib.a(queue.o)
+ .data          0x0000000000000000        0x0 kernel/lib.a(queue.o)
+ .bss           0x0000000000000000        0x0 kernel/lib.a(queue.o)
+ .text.k_queue_cancel_wait
+                0x0000000000000000       0x38 kernel/lib.a(queue.o)
+ .text.k_queue_append_list
+                0x0000000000000000       0x53 kernel/lib.a(queue.o)
+ .text.k_queue_merge_slist
+                0x0000000000000000       0x29 kernel/lib.a(queue.o)
+ .text          0x0000000000000000        0x0 kernel/lib.a(sched.o)
+ .data          0x0000000000000000        0x0 kernel/lib.a(sched.o)
+ .bss           0x0000000000000000        0x0 kernel/lib.a(sched.o)
+ .text.k_sched_lock
+                0x0000000000000000        0xd kernel/lib.a(sched.o)
+ .text.k_thread_priority_get
+                0x0000000000000000        0xc kernel/lib.a(sched.o)
+ .text.k_thread_priority_set
+                0x0000000000000000       0x46 kernel/lib.a(sched.o)
+ .text.k_sleep  0x0000000000000000       0x5e kernel/lib.a(sched.o)
+ .text.k_wakeup
+                0x0000000000000000       0x60 kernel/lib.a(sched.o)
+ .text.k_sched_time_slice_set
+                0x0000000000000000       0x1f kernel/lib.a(sched.o)
+ .text.k_is_preempt_thread
+                0x0000000000000000       0x20 kernel/lib.a(sched.o)
+ .text          0x0000000000000000        0x0 kernel/lib.a(sem.o)
+ .data          0x0000000000000000        0x0 kernel/lib.a(sem.o)
+ .bss           0x0000000000000000        0x0 kernel/lib.a(sem.o)
+ .text._sem_give_non_preemptible
+                0x0000000000000000       0x43 kernel/lib.a(sem.o)
+ .text          0x0000000000000000        0x0 kernel/lib.a(sys_clock.o)
+ .data          0x0000000000000000        0x0 kernel/lib.a(sys_clock.o)
+ .bss           0x0000000000000000        0x0 kernel/lib.a(sys_clock.o)
+ .text._tick_get_32
+                0x0000000000000000       0x10 kernel/lib.a(sys_clock.o)
+ .text.k_uptime_get_32
+                0x0000000000000000       0x17 kernel/lib.a(sys_clock.o)
+ .text._tick_get
+                0x0000000000000000       0x1c kernel/lib.a(sys_clock.o)
+ .text.k_uptime_get
+                0x0000000000000000       0x18 kernel/lib.a(sys_clock.o)
+ .text.sys_tick_delta
+                0x0000000000000000       0x34 kernel/lib.a(sys_clock.o)
+ .text.sys_tick_delta_32
+                0x0000000000000000       0x2b kernel/lib.a(sys_clock.o)
+ .text.k_uptime_delta
+                0x0000000000000000       0x29 kernel/lib.a(sys_clock.o)
+ .text.k_uptime_delta_32
+                0x0000000000000000        0xe kernel/lib.a(sys_clock.o)
+ .text          0x0000000000000000        0x0 kernel/lib.a(thread.o)
+ .data          0x0000000000000000        0x0 kernel/lib.a(thread.o)
+ .bss           0x0000000000000000        0x0 kernel/lib.a(thread.o)
+ .text._thread_essential_set
+                0x0000000000000000        0xe kernel/lib.a(thread.o)
+ .text._thread_essential_clear
+                0x0000000000000000        0xe kernel/lib.a(thread.o)
+ .text.k_busy_wait
+                0x0000000000000000       0x4a kernel/lib.a(thread.o)
+ .text.k_thread_cancel
+                0x0000000000000000       0x31 kernel/lib.a(thread.o)
+ .text._k_thread_group_op
+                0x0000000000000000       0x79 kernel/lib.a(thread.o)
+ .text._k_thread_single_start
+                0x0000000000000000       0x20 kernel/lib.a(thread.o)
+ .text.k_thread_spawn
+                0x0000000000000000       0x2f kernel/lib.a(thread.o)
+ .text._k_thread_single_suspend
+                0x0000000000000000       0x22 kernel/lib.a(thread.o)
+ .text.k_thread_suspend
+                0x0000000000000000       0x3b kernel/lib.a(thread.o)
+ .text._k_thread_single_resume
+                0x0000000000000000       0x20 kernel/lib.a(thread.o)
+ .text.k_thread_resume
+                0x0000000000000000       0x1d kernel/lib.a(thread.o)
+ .text._k_thread_group_mask_get
+                0x0000000000000000        0xe kernel/lib.a(thread.o)
+ .text._k_thread_group_join
+                0x0000000000000000       0x11 kernel/lib.a(thread.o)
+ .text._k_thread_group_leave
+                0x0000000000000000       0x11 kernel/lib.a(thread.o)
+ .text          0x0000000000000000        0x0 kernel/lib.a(thread_abort.o)
+ .data          0x0000000000000000        0x0 kernel/lib.a(thread_abort.o)
+ .bss           0x0000000000000000        0x0 kernel/lib.a(thread_abort.o)
+ .text          0x0000000000000000        0x0 kernel/lib.a(idle.o)
+ .data          0x0000000000000000        0x0 kernel/lib.a(idle.o)
+ .bss           0x0000000000000000        0x0 kernel/lib.a(idle.o)
+ .text._sys_power_save_idle_exit
+                0x0000000000000000        0x5 kernel/lib.a(idle.o)
+ .text          0x0000000000000000        0x0 ./arch/x86/core/offsets/offsets.o
+ .data          0x0000000000000000        0x0 ./arch/x86/core/offsets/offsets.o
+ .bss           0x0000000000000000        0x0 ./arch/x86/core/offsets/offsets.o
+ .data          0x0000000000000000        0x0 /home/shubham/zephyr-sdk/sysroots/i586-zephyr-elf/usr/lib/i586-zephyr-elf/6.2.0/libgcc.a(_udivdi3.o)
+ .bss           0x0000000000000000        0x0 /home/shubham/zephyr-sdk/sysroots/i586-zephyr-elf/usr/lib/i586-zephyr-elf/6.2.0/libgcc.a(_udivdi3.o)
+ .eh_frame      0x0000000000000000       0x9c /home/shubham/zephyr-sdk/sysroots/i586-zephyr-elf/usr/lib/i586-zephyr-elf/6.2.0/libgcc.a(_udivdi3.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x0000000000001000 0x00000000003ff000 xr
+RAM              0x0000000000400000 0x0000000000400000 xw
+IDT_LIST         0x00000000ffff1000 0x0000000000000800
+MMU_LIST         0x00000000ffff2000 0x0000000000000400
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD staticIdt.o
+LOAD irq_int_vector_map.o
+LOAD mmu_tables.o
+LOAD gdt.o
+START GROUP
+LOAD libapplication.a
+LOAD libzephyr.a
+LOAD kernel/lib.a
+LOAD ./arch/x86/core/offsets/offsets.o
+END GROUP
+LOAD /home/shubham/zephyr-sdk/sysroots/i586-zephyr-elf/usr/lib/i586-zephyr-elf/6.2.0/libgcc.a
+                0x0000000000001000                _image_rom_start = 0x1000
+                0x0000000000001000                _image_text_start = 0x1000
+
+text            0x0000000000001000     0x63f9
+                0x0000000000000000                . = 0x0
+ *(.text_start)
+ *(.text_start.*)
+ .text_start.__start
+                0x0000000000001000       0xc8 arch/built-in.o
+                0x0000000000001000                __start
+                0x000000000000109e                _Idt
+ *(.text)
+ *fill*         0x00000000000010c8        0x8 
+ .text          0x00000000000010d0      0x129 /home/shubham/zephyr-sdk/sysroots/i586-zephyr-elf/usr/lib/i586-zephyr-elf/6.2.0/libgcc.a(_udivdi3.o)
+                0x00000000000010d0                __udivdi3
+ *(.text.*)
+ .text.main     0x00000000000011f9       0x8b src/built-in.o
+                0x00000000000011f9                main
+ .text._to_x    0x0000000000001284       0x5b lib/built-in.o
+ .text._rlrshift
+                0x00000000000012df       0x26 lib/built-in.o
+ .text._ldiv5   0x0000000000001305       0x94 lib/built-in.o
+ .text._get_digit
+                0x0000000000001399       0x45 lib/built-in.o
+ .text._prf     0x00000000000013de      0xbb2 lib/built-in.o
+                0x00000000000013de                _prf
+ .text.sprintf_out
+                0x0000000000001f90       0x1c lib/built-in.o
+ .text.snprintf
+                0x0000000000001fac       0x39 lib/built-in.o
+                0x0000000000001fac                snprintf
+ .text.strcpy   0x0000000000001fe5       0x1e lib/built-in.o
+                0x0000000000001fe5                strcpy
+ .text.strchr   0x0000000000002003       0x22 lib/built-in.o
+                0x0000000000002003                strchr
+ .text.strrchr  0x0000000000002025       0x18 lib/built-in.o
+                0x0000000000002025                strrchr
+ .text.strlen   0x000000000000203d       0x13 lib/built-in.o
+                0x000000000000203d                strlen
+ .text.strcmp   0x0000000000002050       0x23 lib/built-in.o
+                0x0000000000002050                strcmp
+ .text.memcmp   0x0000000000002073       0x2d lib/built-in.o
+                0x0000000000002073                memcmp
+ .text.memmove  0x00000000000020a0       0x38 lib/built-in.o
+                0x00000000000020a0                memmove
+ .text.memcpy   0x00000000000020d8       0x6b lib/built-in.o
+                0x00000000000020d8                memcpy
+ .text.memset   0x0000000000002143       0x63 lib/built-in.o
+                0x0000000000002143                memset
+ .text.strtol   0x00000000000021a6      0x13b lib/built-in.o
+                0x00000000000021a6                strtol
+ .text.console_out
+                0x00000000000022e1       0x31 drivers/built-in.o
+ .text.uart_console_hook_install
+                0x0000000000002312       0x10 drivers/built-in.o
+                0x0000000000002312                uart_console_hook_install
+ .text.uart_console_init
+                0x0000000000002322       0x1c drivers/built-in.o
+ .text.uart_pipe_isr
+                0x000000000000233e       0xb0 drivers/built-in.o
+ .text.uart_pipe_send
+                0x00000000000023ee       0x30 drivers/built-in.o
+                0x00000000000023ee                uart_pipe_send
+ .text.uart_pipe_register
+                0x000000000000241e       0x9b drivers/built-in.o
+                0x000000000000241e                uart_pipe_register
+ .text.sys_rand32_get
+                0x00000000000024b9        0x7 drivers/built-in.o
+                0x00000000000024b9                sys_rand32_get
+ .text.uart_ns16550_init
+                0x00000000000024c0       0xa9 drivers/built-in.o
+ .text.uart_ns16550_poll_in
+                0x0000000000002569       0x27 drivers/built-in.o
+ .text.uart_ns16550_poll_out
+                0x0000000000002590       0x1f drivers/built-in.o
+ .text.uart_ns16550_err_check
+                0x00000000000025af       0x16 drivers/built-in.o
+ .text.uart_ns16550_fifo_fill
+                0x00000000000025c5       0x30 drivers/built-in.o
+ .text.uart_ns16550_fifo_read
+                0x00000000000025f5       0x2e drivers/built-in.o
+ .text.uart_ns16550_irq_tx_enable
+                0x0000000000002623       0x13 drivers/built-in.o
+ .text.uart_ns16550_irq_tx_disable
+                0x0000000000002636       0x13 drivers/built-in.o
+ .text.uart_ns16550_irq_tx_ready
+                0x0000000000002649       0x19 drivers/built-in.o
+ .text.uart_ns16550_irq_tx_complete
+                0x0000000000002662       0x1c drivers/built-in.o
+ .text.uart_ns16550_irq_rx_enable
+                0x000000000000267e       0x13 drivers/built-in.o
+ .text.uart_ns16550_irq_rx_disable
+                0x0000000000002691       0x13 drivers/built-in.o
+ .text.uart_ns16550_irq_rx_ready
+                0x00000000000026a4       0x19 drivers/built-in.o
+ .text.uart_ns16550_irq_err_enable
+                0x00000000000026bd       0x13 drivers/built-in.o
+ .text.uart_ns16550_irq_err_disable
+                0x00000000000026d0       0x13 drivers/built-in.o
+ .text.uart_ns16550_irq_is_pending
+                0x00000000000026e3       0x13 drivers/built-in.o
+ .text.uart_ns16550_irq_update
+                0x00000000000026f6       0x19 drivers/built-in.o
+ .text.uart_ns16550_irq_callback_set
+                0x000000000000270f       0x11 drivers/built-in.o
+ .text.uart_ns16550_isr
+                0x0000000000002720       0x15 drivers/built-in.o
+ .text.irq_config_func_0
+                0x0000000000002735       0x24 drivers/built-in.o
+ .text.irqstubs
+                0x0000000000002759       0x2a drivers/built-in.o
+                0x0000000000002759                uart_ns16550_isr_irq4_stub
+                0x0000000000002768                uart_ns16550_isr_irq3_stub
+                0x0000000000002777                _timer_int_handler_irq2_stub
+ .text.irq_config_func_1
+                0x0000000000002783       0x24 drivers/built-in.o
+ .text._timer_int_handler
+                0x00000000000027a7       0x11 drivers/built-in.o
+                0x00000000000027a7                _timer_int_handler
+ .text._sys_clock_driver_init
+                0x00000000000027b8      0x146 drivers/built-in.o
+                0x00000000000027b8                _sys_clock_driver_init
+ .text._i8259_init
+                0x00000000000028fe        0xd drivers/built-in.o
+                0x00000000000028fe                _i8259_init
+ .text._loapic_init
+                0x000000000000290b       0xad drivers/built-in.o
+ .text._loapic_int_vec_set
+                0x00000000000029b8       0x23 drivers/built-in.o
+                0x00000000000029b8                _loapic_int_vec_set
+ .text._loapic_irq_enable
+                0x00000000000029db       0x24 drivers/built-in.o
+                0x00000000000029db                _loapic_irq_enable
+ .text.__irq_controller_isr_vector_get
+                0x00000000000029ff       0x2f drivers/built-in.o
+                0x00000000000029ff                __irq_controller_isr_vector_get
+ .text.__irq_controller_irq_config
+                0x0000000000002a2e       0x26 drivers/built-in.o
+                0x0000000000002a2e                __irq_controller_irq_config
+ .text._arch_irq_enable
+                0x0000000000002a54       0x1d drivers/built-in.o
+                0x0000000000002a54                _arch_irq_enable
+ .text.__IoApicSet
+                0x0000000000002a71       0x1a drivers/built-in.o
+ .text._IoApicRedUpdateLo
+                0x0000000000002a8b       0x2d drivers/built-in.o
+ .text._ioapic_init
+                0x0000000000002ab8       0x2c drivers/built-in.o
+                0x0000000000002ab8                _ioapic_init
+ .text._ioapic_irq_enable
+                0x0000000000002ae4       0x13 drivers/built-in.o
+                0x0000000000002ae4                _ioapic_irq_enable
+ .text._ioapic_irq_set
+                0x0000000000002af7       0x2e drivers/built-in.o
+                0x0000000000002af7                _ioapic_irq_set
+ .text.slip_init
+                0x0000000000002b25       0x2f drivers/built-in.o
+ .text.recv_cb  0x0000000000002b54      0x1d1 drivers/built-in.o
+ .text.slip_writeb
+                0x0000000000002d25       0x16 drivers/built-in.o
+ .text.slip_writeb_esc
+                0x0000000000002d3b       0x36 drivers/built-in.o
+ .text.slip_send
+                0x0000000000002d71       0xc9 drivers/built-in.o
+ .text.slip_iface_init
+                0x0000000000002e3a       0x55 drivers/built-in.o
+ .text._nop_char_out
+                0x0000000000002e8f        0x7 misc/built-in.o
+ .text.char_out
+                0x0000000000002e96        0xf misc/built-in.o
+ .text._printk_dec_ulong
+                0x0000000000002ea5       0xf3 misc/built-in.o
+ .text.__printk_hook_install
+                0x0000000000002f98        0xd misc/built-in.o
+                0x0000000000002f98                __printk_hook_install
+ .text._vprintk
+                0x0000000000002fa5      0x2fc misc/built-in.o
+                0x0000000000002fa5                _vprintk
+ .text.vprintk  0x00000000000032a1       0x27 misc/built-in.o
+                0x00000000000032a1                vprintk
+ .text.printk   0x00000000000032c8       0x13 misc/built-in.o
+                0x00000000000032c8                printk
+ .text._ConfigAbsSyms
+                0x00000000000032db        0x5 misc/built-in.o
+                0x00000000000032db                _ConfigAbsSyms
+ .text._mbedtls_init
+                0x00000000000032e0        0x7 ext/built-in.o
+ .text.net_buf_alloc
+                0x00000000000032e7       0xb4 subsys/built-in.o
+                0x00000000000032e7                net_buf_alloc
+ .text.net_buf_reserve
+                0x000000000000339b       0x11 subsys/built-in.o
+                0x000000000000339b                net_buf_reserve
+ .text.net_buf_unref
+                0x00000000000033ac       0x4c subsys/built-in.o
+                0x00000000000033ac                net_buf_unref
+ .text.net_buf_frag_last
+                0x00000000000033f8       0x12 subsys/built-in.o
+                0x00000000000033f8                net_buf_frag_last
+ .text.net_buf_frag_insert
+                0x000000000000340a       0x25 subsys/built-in.o
+                0x000000000000340a                net_buf_frag_insert
+ .text.net_buf_frag_add
+                0x000000000000342f       0x2f subsys/built-in.o
+                0x000000000000342f                net_buf_frag_add
+ .text.net_buf_frag_del
+                0x000000000000345e       0x28 subsys/built-in.o
+                0x000000000000345e                net_buf_frag_del
+ .text.net_buf_simple_add
+                0x0000000000003486       0x17 subsys/built-in.o
+                0x0000000000003486                net_buf_simple_add
+ .text.net_buf_simple_add_u8
+                0x000000000000349d       0x1a subsys/built-in.o
+                0x000000000000349d                net_buf_simple_add_u8
+ .text.net_buf_simple_pull
+                0x00000000000034b7       0x13 subsys/built-in.o
+                0x00000000000034b7                net_buf_simple_pull
+ .text.net_buf_simple_headroom
+                0x00000000000034ca        0xf subsys/built-in.o
+                0x00000000000034ca                net_buf_simple_headroom
+ .text.net_buf_simple_tailroom
+                0x00000000000034d9       0x1a subsys/built-in.o
+                0x00000000000034d9                net_buf_simple_tailroom
+ .text.processing_data
+                0x00000000000034f3       0x55 subsys/built-in.o
+ .text.net_init
+                0x0000000000003548       0x61 subsys/built-in.o
+ .text.net_rx_thread
+                0x00000000000035a9       0x41 subsys/built-in.o
+ .text.net_send_data
+                0x00000000000035ea       0xb5 subsys/built-in.o
+                0x00000000000035ea                net_send_data
+ .text.net_recv_data
+                0x000000000000369f       0x42 subsys/built-in.o
+                0x000000000000369f                net_recv_data
+ .text.net_if_get_default
+                0x00000000000036e1       0x16 subsys/built-in.o
+                0x00000000000036e1                net_if_get_default
+ .text.net_if_ipv4_addr_mask_cmp
+                0x00000000000036f7       0x38 subsys/built-in.o
+                0x00000000000036f7                net_if_ipv4_addr_mask_cmp
+ .text.net_if_ipv4_addr_lookup
+                0x000000000000372f       0x3f subsys/built-in.o
+                0x000000000000372f                net_if_ipv4_addr_lookup
+ .text.net_if_ipv4_addr_add
+                0x000000000000376e       0x54 subsys/built-in.o
+                0x000000000000376e                net_if_ipv4_addr_add
+ .text.net_if_call_link_cb
+                0x00000000000037c2       0x2e subsys/built-in.o
+                0x00000000000037c2                net_if_call_link_cb
+ .text.net_if_send_data
+                0x00000000000037f0       0xa5 subsys/built-in.o
+                0x00000000000037f0                net_if_send_data
+ .text.net_if_tx
+                0x0000000000003895       0x9e subsys/built-in.o
+ .text.net_if_tx_thread
+                0x0000000000003933       0x78 subsys/built-in.o
+ .text.net_if_up
+                0x00000000000039ab       0x46 subsys/built-in.o
+                0x00000000000039ab                net_if_up
+ .text.net_if_init
+                0x00000000000039f1       0x67 subsys/built-in.o
+                0x00000000000039f1                net_if_init
+ .text.net_if_post_init
+                0x0000000000003a58       0x22 subsys/built-in.o
+                0x0000000000003a58                net_if_post_init
+ .text.net_context_init
+                0x0000000000003a7a       0x16 subsys/built-in.o
+                0x0000000000003a7a                net_context_init
+ .text.net_pkt_get_reserve
+                0x0000000000003a90       0x56 subsys/built-in.o
+                0x0000000000003a90                net_pkt_get_reserve
+ .text.net_pkt_get_reserve_data
+                0x0000000000003ae6       0x41 subsys/built-in.o
+                0x0000000000003ae6                net_pkt_get_reserve_data
+ .text.net_pkt_get_reserve_rx
+                0x0000000000003b27       0x1a subsys/built-in.o
+                0x0000000000003b27                net_pkt_get_reserve_rx
+ .text.net_pkt_get_reserve_tx
+                0x0000000000003b41       0x1a subsys/built-in.o
+                0x0000000000003b41                net_pkt_get_reserve_tx
+ .text.net_pkt_get_reserve_rx_data
+                0x0000000000003b5b       0x1a subsys/built-in.o
+                0x0000000000003b5b                net_pkt_get_reserve_rx_data
+ .text.net_pkt_get_reserve_tx_data
+                0x0000000000003b75       0x1a subsys/built-in.o
+                0x0000000000003b75                net_pkt_get_reserve_tx_data
+ .text.net_pkt_get_frag
+                0x0000000000003b8f       0x2b subsys/built-in.o
+                0x0000000000003b8f                net_pkt_get_frag
+ .text.net_pkt_ref
+                0x0000000000003bba        0xf subsys/built-in.o
+                0x0000000000003bba                net_pkt_ref
+ .text.net_pkt_frag_unref
+                0x0000000000003bc9       0x12 subsys/built-in.o
+                0x0000000000003bc9                net_pkt_frag_unref
+ .text.net_pkt_unref
+                0x0000000000003bdb       0x3a subsys/built-in.o
+                0x0000000000003bdb                net_pkt_unref
+ .text.net_pkt_frag_del
+                0x0000000000003c15       0x37 subsys/built-in.o
+                0x0000000000003c15                net_pkt_frag_del
+ .text.net_pkt_frag_add
+                0x0000000000003c4c       0x2f subsys/built-in.o
+                0x0000000000003c4c                net_pkt_frag_add
+ .text.check_and_create_data.part.10
+                0x0000000000003c7b       0x28 subsys/built-in.o
+ .text.net_pkt_frag_insert
+                0x0000000000003ca3       0x21 subsys/built-in.o
+                0x0000000000003ca3                net_pkt_frag_insert
+ .text.net_pkt_copy
+                0x0000000000003cc4      0x135 subsys/built-in.o
+                0x0000000000003cc4                net_pkt_copy
+ .text.net_pkt_compact
+                0x0000000000003df9       0xc5 subsys/built-in.o
+                0x0000000000003df9                net_pkt_compact
+ .text.net_frag_read
+                0x0000000000003ebe       0xab subsys/built-in.o
+                0x0000000000003ebe                net_frag_read
+ .text.net_pkt_write
+                0x0000000000003f69      0x190 subsys/built-in.o
+                0x0000000000003f69                net_pkt_write
+ .text.net_frag_get_pos
+                0x00000000000040f9       0x1f subsys/built-in.o
+                0x00000000000040f9                net_frag_get_pos
+ .text.net_pkt_icmp_data
+                0x0000000000004118       0x2a subsys/built-in.o
+                0x0000000000004118                net_pkt_icmp_data
+ .text.net_pkt_udp_data
+                0x0000000000004142       0x2a subsys/built-in.o
+                0x0000000000004142                net_pkt_udp_data
+ .text.net_pkt_init
+                0x000000000000416c        0x5 subsys/built-in.o
+                0x000000000000416c                net_pkt_init
+ .text.calc_chksum
+                0x0000000000004171       0x55 subsys/built-in.o
+ .text.net_addr_pton
+                0x00000000000041c6      0x207 subsys/built-in.o
+                0x00000000000041c6                net_addr_pton
+ .text.net_calc_chksum
+                0x00000000000043cd       0xde subsys/built-in.o
+                0x00000000000043cd                net_calc_chksum
+ .text.net_calc_chksum_ipv4
+                0x00000000000044ab       0x28 subsys/built-in.o
+                0x00000000000044ab                net_calc_chksum_ipv4
+ .text.net_header_fits
+                0x00000000000044d3       0x2d subsys/built-in.o
+                0x00000000000044d3                net_header_fits
+ .text.net_eth_is_addr_broadcast
+                0x0000000000004500       0x31 subsys/built-in.o
+ .text.ethernet_reserve
+                0x0000000000004531        0xa subsys/built-in.o
+ .text.ethernet_enable
+                0x000000000000453b       0x12 subsys/built-in.o
+ .text.ethernet_recv
+                0x000000000000454d      0x157 subsys/built-in.o
+ .text.ethernet_send
+                0x00000000000046a4      0x14d subsys/built-in.o
+ .text.if_get_addr
+                0x00000000000047f1       0x23 subsys/built-in.o
+ .text.prepare_arp
+                0x0000000000004814      0x16f subsys/built-in.o
+ .text.net_arp_prepare
+                0x0000000000004983      0x1d6 subsys/built-in.o
+                0x0000000000004983                net_arp_prepare
+ .text.net_arp_input
+                0x0000000000004b59      0x24a subsys/built-in.o
+                0x0000000000004b59                net_arp_input
+ .text.net_arp_clear_cache
+                0x0000000000004da3       0x36 subsys/built-in.o
+                0x0000000000004da3                net_arp_clear_cache
+ .text.net_arp_init
+                0x0000000000004dd9        0x9 subsys/built-in.o
+                0x0000000000004dd9                net_arp_init
+ .text.setup_ipv4_header
+                0x0000000000004de2       0xc6 subsys/built-in.o
+ .text.net_icmpv4_set_hdr
+                0x0000000000004ea8       0x9c subsys/built-in.o
+                0x0000000000004ea8                net_icmpv4_set_hdr
+ .text.net_icmpv4_get_hdr
+                0x0000000000004f44       0x81 subsys/built-in.o
+                0x0000000000004f44                net_icmpv4_get_hdr
+ .text.net_icmpv4_set_chksum
+                0x0000000000004fc5       0xb1 subsys/built-in.o
+                0x0000000000004fc5                net_icmpv4_set_chksum
+ .text.handle_echo_request
+                0x0000000000005076       0x58 subsys/built-in.o
+ .text.net_icmpv4_send_error
+                0x00000000000050ce      0x17e subsys/built-in.o
+                0x00000000000050ce                net_icmpv4_send_error
+ .text.net_icmpv4_register_handler
+                0x000000000000524c       0x23 subsys/built-in.o
+                0x000000000000524c                net_icmpv4_register_handler
+ .text.net_icmpv4_input
+                0x000000000000526f       0x48 subsys/built-in.o
+                0x000000000000526f                net_icmpv4_input
+ .text.net_icmpv4_init
+                0x00000000000052b7       0x10 subsys/built-in.o
+                0x00000000000052b7                net_icmpv4_init
+ .text.net_ipv4_unspecified_address
+                0x00000000000052c7        0xa subsys/built-in.o
+                0x00000000000052c7                net_ipv4_unspecified_address
+ .text.net_ipv4_broadcast_address
+                0x00000000000052d1        0xa subsys/built-in.o
+                0x00000000000052d1                net_ipv4_broadcast_address
+ .text.net_ipv4_process_pkt
+                0x00000000000052db       0x8f subsys/built-in.o
+                0x00000000000052db                net_ipv4_process_pkt
+ .text.mgmt_thread
+                0x000000000000536a      0x144 subsys/built-in.o
+ .text.net_mgmt_event_notify
+                0x00000000000054ae       0x80 subsys/built-in.o
+                0x00000000000054ae                net_mgmt_event_notify
+ .text.net_mgmt_event_init
+                0x000000000000552e       0x6e subsys/built-in.o
+                0x000000000000552e                net_mgmt_event_init
+ .text.net_udp_header_fits
+                0x000000000000559c       0x1f subsys/built-in.o
+ .text.net_udp_set_chksum
+                0x00000000000055bb       0xa6 subsys/built-in.o
+                0x00000000000055bb                net_udp_set_chksum
+ .text.net_udp_get_chksum
+                0x0000000000005661       0x4c subsys/built-in.o
+                0x0000000000005661                net_udp_get_chksum
+ .text.net_udp_get_hdr
+                0x00000000000056ad       0x8b subsys/built-in.o
+                0x00000000000056ad                net_udp_get_hdr
+ .text.net_udp_init
+                0x0000000000005738        0x5 subsys/built-in.o
+                0x0000000000005738                net_udp_init
+ .text.check_addr
+                0x000000000000573d       0x5b subsys/built-in.o
+ .text.net_conn_input
+                0x0000000000005798      0x176 subsys/built-in.o
+                0x0000000000005798                net_conn_input
+ .text.net_conn_init
+                0x000000000000590e        0x5 subsys/built-in.o
+                0x000000000000590e                net_conn_init
+ .text.net_app_init
+                0x0000000000005913       0xff subsys/built-in.o
+                0x0000000000005913                net_app_init
+ .text.init_net_app
+                0x0000000000005a12       0x19 subsys/built-in.o
+ .text.k_cpu_idle
+                0x0000000000005a2b        0x7 arch/built-in.o
+                0x0000000000005a2b                k_cpu_idle
+ .text._SysFatalErrorHandler
+                0x0000000000005a32       0x6c arch/built-in.o
+                0x0000000000005a32                _SysFatalErrorHandler
+ .text._cache_line_size_get
+                0x0000000000005a9e       0x14 arch/built-in.o
+                0x0000000000005a9e                _cache_line_size_get
+ .text.init_cache
+                0x0000000000005ab2       0x11 arch/built-in.o
+ .text._exception_enter
+                0x0000000000005ac3       0x2c arch/built-in.o
+                0x0000000000005ac3                _exception_enter
+ .text._kernel_oops_handler
+                0x0000000000005aef        0xc arch/built-in.o
+                0x0000000000005aef                _kernel_oops_handler
+ .text._interrupt_enter
+                0x0000000000005afb       0x5e arch/built-in.o
+                0x0000000000005afb                _interrupt_enter
+ .text._SpuriousIntNoErrCodeHandler
+                0x0000000000005b59        0x2 arch/built-in.o
+                0x0000000000005b59                _SpuriousIntNoErrCodeHandler
+ .text._SpuriousIntHandler
+                0x0000000000005b5b       0x16 arch/built-in.o
+                0x0000000000005b5b                _SpuriousIntHandler
+ .text.__swap   0x0000000000005b71       0x29 arch/built-in.o
+                0x0000000000005b71                __swap
+ .text._new_thread
+                0x0000000000005b9a       0x80 arch/built-in.o
+                0x0000000000005b9a                _new_thread
+ .text._x86_mmu_get_flags
+                0x0000000000005c1a       0x3e arch/built-in.o
+                0x0000000000005c1a                _x86_mmu_get_flags
+ .text._x86_mmu_set_flags
+                0x0000000000005c58       0x4d arch/built-in.o
+                0x0000000000005c58                _x86_mmu_set_flags
+ .text.dump_entry_flags
+                0x0000000000005ca5       0x44 arch/built-in.o
+ .text._df_handler_top
+                0x0000000000005ce9       0xd2 arch/built-in.o
+ .text._debug_fatal_hook
+                0x0000000000005dbb        0x5 arch/built-in.o
+                0x0000000000005dbb                _debug_fatal_hook
+ .text._NanoFatalErrorHandler
+                0x0000000000005dc0       0xfc arch/built-in.o
+                0x0000000000005dc0                _NanoFatalErrorHandler
+ .text.generic_exc_handle
+                0x0000000000005ebc       0x37 arch/built-in.o
+ .text._df_handler_bottom
+                0x0000000000005ef3       0x57 arch/built-in.o
+ .text._do_kernel_oops
+                0x0000000000005f4a        0xf arch/built-in.o
+                0x0000000000005f4a                _do_kernel_oops
+ .text.handle_exc_0
+                0x0000000000005f59        0xd arch/built-in.o
+                0x0000000000005f59                handle_exc_0
+ .text.handle_exc_2
+                0x0000000000005f66       0x10 arch/built-in.o
+                0x0000000000005f66                handle_exc_2
+ .text.handle_exc_4
+                0x0000000000005f76       0x10 arch/built-in.o
+                0x0000000000005f76                handle_exc_4
+ .text.handle_exc_5
+                0x0000000000005f86       0x10 arch/built-in.o
+                0x0000000000005f86                handle_exc_5
+ .text.handle_exc_6
+                0x0000000000005f96       0x10 arch/built-in.o
+                0x0000000000005f96                handle_exc_6
+ .text.handle_exc_7
+                0x0000000000005fa6       0x10 arch/built-in.o
+                0x0000000000005fa6                handle_exc_7
+ .text.handle_exc_10
+                0x0000000000005fb6       0x10 arch/built-in.o
+                0x0000000000005fb6                handle_exc_10
+ .text.handle_exc_11
+                0x0000000000005fc6       0x10 arch/built-in.o
+                0x0000000000005fc6                handle_exc_11
+ .text.handle_exc_12
+                0x0000000000005fd6       0x10 arch/built-in.o
+                0x0000000000005fd6                handle_exc_12
+ .text.handle_exc_13
+                0x0000000000005fe6       0x10 arch/built-in.o
+                0x0000000000005fe6                handle_exc_13
+ .text.handle_exc_16
+                0x0000000000005ff6       0x10 arch/built-in.o
+                0x0000000000005ff6                handle_exc_16
+ .text.handle_exc_17
+                0x0000000000006006       0x10 arch/built-in.o
+                0x0000000000006006                handle_exc_17
+ .text.handle_exc_18
+                0x0000000000006016       0x10 arch/built-in.o
+                0x0000000000006016                handle_exc_18
+ .text.page_fault_handler
+                0x0000000000006026       0x96 arch/built-in.o
+                0x0000000000006026                page_fault_handler
+ .text._sys_device_do_config_level
+                0x00000000000060bc       0x2e kernel/lib.a(device.o)
+                0x00000000000060bc                _sys_device_do_config_level
+ .text.device_get_binding
+                0x00000000000060ea       0x39 kernel/lib.a(device.o)
+                0x00000000000060ea                device_get_binding
+ .text.__errno  0x0000000000006123        0xd kernel/lib.a(errno.o)
+                0x0000000000006123                __errno
+ .text._main    0x0000000000006130       0x2a kernel/lib.a(init.o)
+ .text._Cstart  0x000000000000615a      0x11b kernel/lib.a(init.o)
+                0x000000000000615a                _Cstart
+ .text.init_mem_slab_module
+                0x0000000000006275       0x45 kernel/lib.a(mem_slab.o)
+ .text.k_mem_slab_alloc
+                0x00000000000062ba       0x6e kernel/lib.a(mem_slab.o)
+                0x00000000000062ba                k_mem_slab_alloc
+ .text.k_mem_slab_free
+                0x0000000000006328       0xff kernel/lib.a(mem_slab.o)
+                0x0000000000006328                k_mem_slab_free
+ .text.sys_dlist_remove
+                0x0000000000006427       0x11 kernel/lib.a(poll.o)
+ .text.clear_event_registrations
+                0x0000000000006438       0x48 kernel/lib.a(poll.o)
+ .text._signal_poll_event
+                0x0000000000006480       0xe2 kernel/lib.a(poll.o)
+ .text.add_event
+                0x0000000000006562       0x75 kernel/lib.a(poll.o)
+ .text.k_poll_event_init
+                0x00000000000065d7       0x34 kernel/lib.a(poll.o)
+                0x00000000000065d7                k_poll_event_init
+ .text.k_poll   0x000000000000660b      0x187 kernel/lib.a(poll.o)
+                0x000000000000660b                k_poll
+ .text._handle_obj_poll_events
+                0x0000000000006792       0x31 kernel/lib.a(poll.o)
+                0x0000000000006792                _handle_obj_poll_events
+ .text.k_queue_init
+                0x00000000000067c3       0x1e kernel/lib.a(queue.o)
+                0x00000000000067c3                k_queue_init
+ .text.k_queue_insert
+                0x00000000000067e1       0x7a kernel/lib.a(queue.o)
+                0x00000000000067e1                k_queue_insert
+ .text.k_queue_append
+                0x000000000000685b       0x17 kernel/lib.a(queue.o)
+                0x000000000000685b                k_queue_append
+ .text.k_queue_prepend
+                0x0000000000006872       0x15 kernel/lib.a(queue.o)
+                0x0000000000006872                k_queue_prepend
+ .text.k_queue_get
+                0x0000000000006887       0x92 kernel/lib.a(queue.o)
+                0x0000000000006887                k_queue_get
+ .text._get_highest_ready_prio
+                0x0000000000006919       0x16 kernel/lib.a(sched.o)
+ .text._add_thread_to_ready_q
+                0x000000000000692f       0x61 kernel/lib.a(sched.o)
+                0x000000000000692f                _add_thread_to_ready_q
+ .text._ready_thread
+                0x0000000000006990       0x22 kernel/lib.a(sched.o)
+ .text._add_timeout
+                0x00000000000069b2       0xc6 kernel/lib.a(sched.o)
+ .text._remove_thread_from_ready_q
+                0x0000000000006a78       0x62 kernel/lib.a(sched.o)
+                0x0000000000006a78                _remove_thread_from_ready_q
+ .text._pend_thread
+                0x0000000000006ada       0x84 kernel/lib.a(sched.o)
+                0x0000000000006ada                _pend_thread
+ .text._pend_current_thread
+                0x0000000000006b5e       0x25 kernel/lib.a(sched.o)
+                0x0000000000006b5e                _pend_current_thread
+ .text.__must_switch_threads
+                0x0000000000006b83       0x1b kernel/lib.a(sched.o)
+                0x0000000000006b83                __must_switch_threads
+ .text._reschedule_threads
+                0x0000000000006b9e       0x39 kernel/lib.a(sched.o)
+                0x0000000000006b9e                _reschedule_threads
+ .text.k_sched_unlock
+                0x0000000000006bd7       0x17 kernel/lib.a(sched.o)
+                0x0000000000006bd7                k_sched_unlock
+ .text._move_thread_to_end_of_prio_q
+                0x0000000000006bee       0x63 kernel/lib.a(sched.o)
+                0x0000000000006bee                _move_thread_to_end_of_prio_q
+ .text.k_yield  0x0000000000006c51       0x3f kernel/lib.a(sched.o)
+                0x0000000000006c51                k_yield
+ .text.k_current_get
+                0x0000000000006c90        0xa kernel/lib.a(sched.o)
+                0x0000000000006c90                k_current_get
+ .text._is_thread_time_slicing
+                0x0000000000006c9a       0x3b kernel/lib.a(sched.o)
+                0x0000000000006c9a                _is_thread_time_slicing
+ .text._update_time_slice_before_swap
+                0x0000000000006cd5        0xf kernel/lib.a(sched.o)
+                0x0000000000006cd5                _update_time_slice_before_swap
+ .text._ready_thread
+                0x0000000000006ce4       0x22 kernel/lib.a(sem.o)
+ .text._unpend_first_thread
+                0x0000000000006d06       0x4e kernel/lib.a(sem.o)
+ .text._abort_timeout
+                0x0000000000006d54       0x34 kernel/lib.a(sem.o)
+ .text.k_sem_init
+                0x0000000000006d88       0x22 kernel/lib.a(sem.o)
+                0x0000000000006d88                k_sem_init
+ .text.k_sem_give
+                0x0000000000006daa       0x99 kernel/lib.a(sem.o)
+                0x0000000000006daa                k_sem_give
+ .text.k_sem_take
+                0x0000000000006e43       0x4d kernel/lib.a(sem.o)
+                0x0000000000006e43                k_sem_take
+ .text._nano_sys_clock_tick_announce
+                0x0000000000006e90      0x1c7 kernel/lib.a(sys_clock.o)
+                0x0000000000006e90                _nano_sys_clock_tick_announce
+ .text._is_thread_ready
+                0x0000000000007057       0x19 kernel/lib.a(thread.o)
+ .text._abort_timeout
+                0x0000000000007070       0x34 kernel/lib.a(thread.o)
+ .text.k_is_in_isr
+                0x00000000000070a4       0x11 kernel/lib.a(thread.o)
+                0x00000000000070a4                k_is_in_isr
+ .text._is_thread_essential
+                0x00000000000070b5       0x10 kernel/lib.a(thread.o)
+                0x00000000000070b5                _is_thread_essential
+ .text._thread_entry
+                0x00000000000070c5       0x2b kernel/lib.a(thread.o)
+                0x00000000000070c5                _thread_entry
+ .text.schedule_new_thread
+                0x00000000000070f0       0xe7 kernel/lib.a(thread.o)
+ .text.k_thread_create
+                0x00000000000071d7       0x39 kernel/lib.a(thread.o)
+                0x00000000000071d7                k_thread_create
+ .text._k_thread_single_abort
+                0x0000000000007210       0x51 kernel/lib.a(thread.o)
+                0x0000000000007210                _k_thread_single_abort
+ .text._init_static_threads
+                0x0000000000007261       0x7c kernel/lib.a(thread.o)
+                0x0000000000007261                _init_static_threads
+ .text._init_thread_base
+                0x00000000000072dd       0x3a kernel/lib.a(thread.o)
+                0x00000000000072dd                _init_thread_base
+ .text.k_thread_abort
+                0x0000000000007317       0x34 kernel/lib.a(thread_abort.o)
+                0x0000000000007317                k_thread_abort
+ .text.idle     0x000000000000734b        0xd kernel/lib.a(idle.o)
+                0x000000000000734b                idle
+ .text._OffsetAbsSyms
+                0x0000000000007358        0x5 ./arch/x86/core/offsets/offsets.o
+                0x0000000000007358                _OffsetAbsSyms
+ *(.gnu.linkonce.t.*)
+ .gnu.linkonce.t.exc_0_stub
+                0x000000000000735d        0xc arch/built-in.o
+                0x000000000000735d                _handle_exc_0_vector_0_stub
+ .gnu.linkonce.t.exc_2_stub
+                0x0000000000007369        0xc arch/built-in.o
+                0x0000000000007369                _handle_exc_2_vector_2_stub
+ .gnu.linkonce.t.exc_4_stub
+                0x0000000000007375        0xc arch/built-in.o
+                0x0000000000007375                _handle_exc_4_vector_4_stub
+ .gnu.linkonce.t.exc_5_stub
+                0x0000000000007381        0xc arch/built-in.o
+                0x0000000000007381                _handle_exc_5_vector_5_stub
+ .gnu.linkonce.t.exc_6_stub
+                0x000000000000738d        0xc arch/built-in.o
+                0x000000000000738d                _handle_exc_6_vector_6_stub
+ .gnu.linkonce.t.exc_7_stub
+                0x0000000000007399        0xc arch/built-in.o
+                0x0000000000007399                _handle_exc_7_vector_7_stub
+ .gnu.linkonce.t.exc_10_stub
+                0x00000000000073a5        0xa arch/built-in.o
+                0x00000000000073a5                _handle_exc_10_vector_10_stub
+ .gnu.linkonce.t.exc_11_stub
+                0x00000000000073af        0xa arch/built-in.o
+                0x00000000000073af                _handle_exc_11_vector_11_stub
+ .gnu.linkonce.t.exc_12_stub
+                0x00000000000073b9        0xa arch/built-in.o
+                0x00000000000073b9                _handle_exc_12_vector_12_stub
+ .gnu.linkonce.t.exc_13_stub
+                0x00000000000073c3        0xa arch/built-in.o
+                0x00000000000073c3                _handle_exc_13_vector_13_stub
+ .gnu.linkonce.t.exc_16_stub
+                0x00000000000073cd        0xc arch/built-in.o
+                0x00000000000073cd                _handle_exc_16_vector_16_stub
+ .gnu.linkonce.t.exc_17_stub
+                0x00000000000073d9        0xa arch/built-in.o
+                0x00000000000073d9                _handle_exc_17_vector_17_stub
+ .gnu.linkonce.t.exc_18_stub
+                0x00000000000073e3        0xc arch/built-in.o
+                0x00000000000073e3                _handle_exc_18_vector_18_stub
+ .gnu.linkonce.t.exc_14_stub
+                0x00000000000073ef        0xa arch/built-in.o
+                0x00000000000073ef                _page_fault_handler_vector_14_stub
+ *(.eh_frame)
+ *(.init)
+ *(.fini)
+ *(.eini)
+ *(.openocd_dbg)
+ *(.openocd_dbg.*)
+                0x00000000000073f9                _image_text_end = .
+                0x00000000000073f9                _image_rodata_start = .
+
+devconfig       0x00000000000073fc       0x9c
+                0x00000000000073fc                __devconfig_start = .
+ *(.devconfig.*)
+ .devconfig.init
+                0x00000000000073fc       0x60 drivers/built-in.o
+ .devconfig.init
+                0x000000000000745c        0xc ext/built-in.o
+ .devconfig.init
+                0x0000000000007468       0x18 subsys/built-in.o
+ .devconfig.init
+                0x0000000000007480        0xc arch/built-in.o
+ .devconfig.init
+                0x000000000000748c        0xc kernel/lib.a(mem_slab.o)
+ *(SORT(.devconfig*))
+                0x0000000000007498                __devconfig_end = .
+
+net_l2          0x0000000000007498       0x10
+                0x0000000000007498                __net_l2_start = .
+ *(.net_l2.init)
+ .net_l2.init   0x0000000000007498       0x10 subsys/built-in.o
+                0x0000000000007498                __net_l2_ETHERNET
+ *(SORT(.net_l2.init*))
+                0x00000000000074a8                __net_l2_end = .
+
+.rel.dyn        0x00000000000074a8        0x0
+ .rel.text.irq_config_func_0
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text.irq_config_func_1
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text._sys_clock_driver_init
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text.net_buf_alloc
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text.net_buf_unref
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text.net_if_get_default
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text.net_if_ipv4_addr_lookup
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text.net_if_tx_thread
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text.net_if_init
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text.net_if_post_init
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text_start.__start
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text.init_cache
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text._x86_mmu_get_flags
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text._x86_mmu_set_flags
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text._df_handler_top
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text._NanoFatalErrorHandler
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.mmulist   0x00000000000074a8        0x0 src/built-in.o
+ .rel.tss       0x00000000000074a8        0x0 src/built-in.o
+ .rel.text.device_get_binding
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.rodata.config_levels
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text.init_mem_slab_module
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text.k_mem_slab_free
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text._reschedule_threads
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text.k_yield
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text._update_time_slice_before_swap
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text._unpend_first_thread
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text._nano_sys_clock_tick_announce
+                0x00000000000074a8        0x0 src/built-in.o
+ .rel.text._init_static_threads
+                0x00000000000074a8        0x0 src/built-in.o
+
+rodata          0x00000000000074c0      0xed0
+ *(.rodata)
+ *(.rodata.*)
+ .rodata.main.str1.1
+                0x00000000000074c0       0x7b src/built-in.o
+ .rodata._prf.str1.1
+                0x000000000000753b        0xb lib/built-in.o
+ .rodata.shifts.1089
+                0x0000000000007546        0x3 lib/built-in.o
+ .rodata.uart_console_init.str1.1
+                0x0000000000007549        0x7 drivers/built-in.o
+ .rodata.str1.1
+                0x0000000000007550       0x16 drivers/built-in.o
+                                         0x21 (size before relaxing)
+ .rodata.uart_pipe_register.str1.1
+                0x0000000000007566        0x7 drivers/built-in.o
+ *fill*         0x0000000000007566        0x2 
+ .rodata.uart_ns16550_dev_cfg_1
+                0x0000000000007568        0x8 drivers/built-in.o
+ .rodata.uart_ns16550_dev_cfg_0
+                0x0000000000007570        0x8 drivers/built-in.o
+ *fill*         0x0000000000007578        0x8 
+ .rodata.uart_ns16550_driver_api
+                0x0000000000007580       0x44 drivers/built-in.o
+ .rodata.str1.1
+                0x00000000000075c4      0x1ad ext/built-in.o
+                                        0x1ba (size before relaxing)
+ .rodata.str1.1
+                0x0000000000007771        0x2 subsys/built-in.o
+ *fill*         0x0000000000007771        0x3 
+ .rodata.broadcast_eth_addr
+                0x0000000000007774        0x6 subsys/built-in.o
+ *fill*         0x000000000000777a        0x2 
+ .rodata.addr.3938
+                0x000000000000777c        0x4 subsys/built-in.o
+ .rodata.net_app_init.str1.1
+                0x0000000000007780       0x18 subsys/built-in.o
+ .rodata.init_net_app.str1.1
+                0x0000000000007798       0x15 subsys/built-in.o
+ .rodata._SysFatalErrorHandler.str1.1
+                0x00000000000077ad       0x88 arch/built-in.o
+ .rodata.str1.1
+                0x0000000000007835        0x1 arch/built-in.o
+ .rodata.dump_entry_flags.str1.1
+                0x0000000000007835       0x48 arch/built-in.o
+ .rodata._NanoFatalErrorHandler.str1.1
+                0x000000000000787d      0x1a1 arch/built-in.o
+                                        0x1a8 (size before relaxing)
+ *fill*         0x0000000000007a1e        0x2 
+ .rodata._NanoFatalErrorHandler
+                0x0000000000007a20       0x24 arch/built-in.o
+ .rodata.generic_exc_handle.str1.1
+                0x0000000000007a44       0x34 arch/built-in.o
+ .rodata._df_handler_bottom.str1.1
+                0x0000000000007a78       0x1a arch/built-in.o
+ .rodata.page_fault_handler.str1.1
+                0x0000000000007a92       0x62 arch/built-in.o
+                                         0x67 (size before relaxing)
+ .rodata.config_levels
+                0x0000000000007af4       0x14 kernel/lib.a(device.o)
+ .rodata._k_neg_eagain
+                0x0000000000007b08        0x4 kernel/lib.a(errno.o)
+                0x0000000000007b08                _k_neg_eagain
+ .rodata._idle_thread
+                0x0000000000007b0c        0x4 kernel/lib.a(init.o)
+                0x0000000000007b0c                _idle_thread
+ .rodata.str1.1
+                0x0000000000007b10        0x1 kernel/lib.a(mem_slab.o)
+ *(.gnu.linkonce.r.*)
+                0x0000000000007b18                . = ALIGN (0x8)
+                0x0000000000007b18                _idt_base_address = .
+ *(staticIdt)
+ staticIdt      0x0000000000007b10      0x800 staticIdt.o
+                0x0000000000007b10                _binary_staticIdt_bin_start
+                0x0000000000008310                _binary_staticIdt_bin_end
+                0x0000000000008310                . = ALIGN (0x4)
+                0x0000000000008310                _irq_to_interrupt_vector = .
+ *(irq_int_vector_map)
+ irq_int_vector_map
+                0x0000000000008310       0x80 irq_int_vector_map.o
+                0x0000000000008310                _binary_irq_int_vector_map_bin_start
+                0x0000000000008390                _binary_irq_int_vector_map_bin_end
+                0x0000000000008390                _image_rodata_end = .
+                0x0000000000009000                . = ALIGN (0x1000)
+                0x0000000000009000                _image_rom_end = .
+                0x0000000000008000                _image_rom_size = (_image_rom_end - _image_rom_start)
+
+datas           0x0000000000400000     0x5000 load address 0x0000000000008390
+                0x0000000000400000                _image_ram_start = .
+                0x0000000000400000                __kernel_ram_start = .
+                0x0000000000400000                __data_ram_start = .
+ *(.data)
+ *(.data.*)
+ .data.certDirectory
+                0x0000000000400000       0xc9 src/built-in.o
+ *fill*         0x00000000004000c9        0x3 
+ .data.uart_ns16550_dev_data_1
+                0x00000000004000cc       0x10 drivers/built-in.o
+ .data.uart_ns16550_dev_data_0
+                0x00000000004000dc       0x10 drivers/built-in.o
+ .data.slip_if_api
+                0x00000000004000ec        0x8 drivers/built-in.o
+ .data._char_out
+                0x00000000004000f4        0x4 misc/built-in.o
+ .data.echo_request_handler
+                0x00000000004000f8        0xc subsys/built-in.o
+ .data._sys_idle_elapsed_ticks
+                0x0000000000400104        0x4 kernel/lib.a(sys_clock.o)
+                0x0000000000400104                _sys_idle_elapsed_ticks
+ .data.sys_clock_hw_cycles_per_sec
+                0x0000000000400108        0x4 kernel/lib.a(sys_clock.o)
+                0x0000000000400108                sys_clock_hw_cycles_per_sec
+ .data.sys_clock_hw_cycles_per_tick
+                0x000000000040010c        0x4 kernel/lib.a(sys_clock.o)
+                0x000000000040010c                sys_clock_hw_cycles_per_tick
+ .data.sys_clock_us_per_tick
+                0x0000000000400110        0x4 kernel/lib.a(sys_clock.o)
+                0x0000000000400110                sys_clock_us_per_tick
+ *(.kernel.*)
+ *(.tss)
+ *fill*         0x0000000000400114        0xc 
+ .tss           0x0000000000400120       0xe8 arch/built-in.o
+                0x0000000000400120                _df_tss
+                0x00000000004001a0                _main_tss
+                0x0000000000400208                . = ALIGN (0x8)
+                0x0000000000400208                _gdt = .
+ *(gdt_ram_data)
+ gdt_ram_data   0x0000000000400208       0x28 gdt.o
+                0x0000000000400208                _binary_gdt_bin_start
+                0x0000000000400230                _binary_gdt_bin_end
+                0x0000000000401000                . = ALIGN (0x1000)
+ *fill*         0x0000000000400230      0xdd0 
+                0x0000000000401000                __mmu_tables_start = .
+ *(.mmu_data)
+ .mmu_data      0x0000000000401000     0x4000 mmu_tables.o
+                0x0000000000401000                _binary_mmu_tables_bin_start
+                0x0000000000405000                _binary_mmu_tables_bin_end
+                0x0000000000405000                __mmu_tables_end = .
+                0x0000000000405000                . = ALIGN (0x4)
+                0x0000000000008390                __data_rom_start = LOADADDR (datas)
+
+initlevel       0x0000000000405000       0x9c load address 0x000000000000d390
+                0x0000000000405000                __device_init_start = .
+                0x0000000000405000                __device_PRE_KERNEL_1_start = .
+ *(SORT(.init_PRE_KERNEL_1[0-9]))
+ *(SORT(.init_PRE_KERNEL_1[1-9][0-9]))
+ .init_PRE_KERNEL_130
+                0x0000000000405000        0xc kernel/lib.a(mem_slab.o)
+ .init_PRE_KERNEL_140
+                0x000000000040500c       0x24 drivers/built-in.o
+ .init_PRE_KERNEL_140
+                0x0000000000405030        0xc arch/built-in.o
+ .init_PRE_KERNEL_150
+                0x000000000040503c       0x18 drivers/built-in.o
+                0x0000000000405054                __device_PRE_KERNEL_2_start = .
+ *(SORT(.init_PRE_KERNEL_2[0-9]))
+ .init_PRE_KERNEL_20
+                0x0000000000405054        0xc drivers/built-in.o
+ *(SORT(.init_PRE_KERNEL_2[1-9][0-9]))
+                0x0000000000405060                __device_POST_KERNEL_start = .
+ *(SORT(.init_POST_KERNEL[0-9]))
+ .init_POST_KERNEL0
+                0x0000000000405060        0xc ext/built-in.o
+ *(SORT(.init_POST_KERNEL[1-9][0-9]))
+ .init_POST_KERNEL40
+                0x000000000040506c        0xc drivers/built-in.o
+ .init_POST_KERNEL60
+                0x0000000000405078        0xc drivers/built-in.o
+ .init_POST_KERNEL90
+                0x0000000000405084        0xc subsys/built-in.o
+                0x0000000000405090                __device_APPLICATION_start = .
+ *(SORT(.init_APPLICATION[0-9]))
+ *(SORT(.init_APPLICATION[1-9][0-9]))
+ .init_APPLICATION95
+                0x0000000000405090        0xc subsys/built-in.o
+                0x000000000040509c                __device_init_end = .
+
+initlevel_error
+                0x0000000000405000        0x0
+ *(SORT(.init_[_A-Z0-9]*))
+                0x0000000000000001                ASSERT ((SIZEOF (initlevel_error) == 0x0), Undefined initialization levels used.)
+
+initshell       0x000000000040509c        0x0 load address 0x000000000000d42c
+                0x000000000040509c                __shell_cmd_start = .
+ *(.shell_*)
+                0x000000000040509c                __shell_cmd_end = .
+
+_static_thread_area
+                0x000000000040509c        0x0 load address 0x000000000000d42c
+                0x000000000040509c                _static_thread_data_list_start = .
+ *(SORT(._static_thread_data.static.*))
+                0x000000000040509c                _static_thread_data_list_end = .
+
+_k_timer_area   0x000000000040509c        0x0 load address 0x000000000000d42c
+                0x000000000040509c                _k_timer_list_start = .
+ *(SORT(._k_timer.static.*))
+                0x000000000040509c                _k_timer_list_end = .
+
+_k_mem_slab_area
+                0x000000000040509c       0x38 load address 0x000000000000d42c
+                0x000000000040509c                _k_mem_slab_list_start = .
+ *(SORT(._k_mem_slab.static.*))
+ ._k_mem_slab.static.rx_pkts
+                0x000000000040509c       0x1c subsys/built-in.o
+                0x000000000040509c                rx_pkts
+ ._k_mem_slab.static.tx_pkts
+                0x00000000004050b8       0x1c subsys/built-in.o
+                0x00000000004050b8                tx_pkts
+                0x00000000004050d4                _k_mem_slab_list_end = .
+
+_k_mem_pool_area
+                0x00000000004050d4        0x0 load address 0x000000000000d464
+ *(SORT(._k_memory_pool.struct*))
+                0x00000000004050d4                _k_mem_pool_list_start = .
+ *(SORT(._k_mem_pool.static.*))
+                0x00000000004050d4                _k_mem_pool_list_end = .
+
+_k_sem_area     0x00000000004050d4       0x48 load address 0x000000000000d464
+                0x00000000004050d4                _k_sem_list_start = .
+ *(SORT(._k_sem.static.*))
+ ._k_sem.static.network_event
+                0x00000000004050d4       0x18 subsys/built-in.o
+ ._k_sem.static.startup_sync
+                0x00000000004050ec       0x18 subsys/built-in.o
+ ._k_sem.static.waiter
+                0x0000000000405104       0x18 subsys/built-in.o
+                0x000000000040511c                _k_sem_list_end = .
+
+_k_mutex_area   0x000000000040511c        0x0 load address 0x000000000000d4ac
+                0x000000000040511c                _k_mutex_list_start = .
+ *(SORT(._k_mutex.static.*))
+                0x000000000040511c                _k_mutex_list_end = .
+
+_k_alert_area   0x000000000040511c        0x0 load address 0x000000000000d4ac
+                0x000000000040511c                _k_alert_list_start = .
+ *(SORT(._k_alert.static.*))
+                0x000000000040511c                _k_alert_list_end = .
+
+_k_queue_area   0x000000000040511c        0x0 load address 0x000000000000d4ac
+                0x000000000040511c                _k_queue_list_start = .
+ *(SORT(._k_queue.static.*))
+                0x000000000040511c                _k_queue_list_end = .
+
+_k_stack_area   0x000000000040511c        0x0 load address 0x000000000000d4ac
+                0x000000000040511c                _k_stack_list_start = .
+ *(SORT(._k_stack.static.*))
+                0x000000000040511c                _k_stack_list_end = .
+
+_k_msgq_area    0x000000000040511c        0x0 load address 0x000000000000d4ac
+                0x000000000040511c                _k_msgq_list_start = .
+ *(SORT(._k_msgq.static.*))
+                0x000000000040511c                _k_msgq_list_end = .
+
+_k_mbox_area    0x000000000040511c        0x0 load address 0x000000000000d4ac
+                0x000000000040511c                _k_mbox_list_start = .
+ *(SORT(._k_mbox.static.*))
+                0x000000000040511c                _k_mbox_list_end = .
+
+_k_pipe_area    0x000000000040511c        0x0 load address 0x000000000000d4ac
+                0x000000000040511c                _k_pipe_list_start = .
+ *(SORT(._k_pipe.static.*))
+                0x000000000040511c                _k_pipe_list_end = .
+
+_k_work_area    0x000000000040511c        0x0 load address 0x000000000000d4ac
+                0x000000000040511c                _k_work_list_start = .
+ *(SORT(._k_work.static.*))
+                0x000000000040511c                _k_work_list_end = .
+
+_k_task_list    0x000000000040511c        0x0 load address 0x000000000000d4ac
+                0x000000000040511c                _k_task_list_start = .
+ *(._k_task_list.public.*)
+ *(._k_task_list.private.*)
+                0x000000000040511c                _k_task_list_idle_start = .
+ *(._k_task_list.idle.*)
+ *(SORT(._k_task_list*))
+                0x000000000040511c                _k_task_list_end = .
+
+_k_event_list   0x000000000040511c        0x0 load address 0x000000000000d4ac
+                0x000000000040511c                _k_event_list_start = .
+ *(._k_event_list.event.*)
+ *(SORT(._k_event_list*))
+                0x000000000040511c                _k_event_list_end = .
+
+_k_memory_pool  0x000000000040511c        0x0 load address 0x000000000000d4ac
+ *(._k_memory_pool.struct*)
+ *(SORT(._k_memory_pool.struct*))
+                0x000000000040511c                _k_mem_pool_start = .
+ *(._k_memory_pool.*)
+ *(SORT(._k_memory_pool*))
+                0x000000000040511c                _k_mem_pool_end = .
+
+_net_buf_pool_area
+                0x000000000040511c       0x40 load address 0x000000000000d4ac
+                0x000000000040511c                _net_buf_pool_list = .
+ *(SORT(._net_buf_pool.static.*))
+ ._net_buf_pool.static.rx_bufs
+                0x000000000040511c       0x20 subsys/built-in.o
+                0x000000000040511c                rx_bufs
+ ._net_buf_pool.static.tx_bufs
+                0x000000000040513c       0x20 subsys/built-in.o
+                0x000000000040513c                tx_bufs
+
+net_if          0x0000000000405160       0x80 load address 0x000000000000d4f0
+                0x0000000000405160                __net_if_start = .
+ *(.net_if.*)
+ .net_if.data   0x0000000000405160       0x80 drivers/built-in.o
+ *(SORT(.net_if.*))
+                0x00000000004051e0                __net_if_end = .
+
+net_if_event    0x00000000004051e0       0x14 load address 0x000000000000d570
+                0x00000000004051e0                __net_if_event_start = .
+ *(.net_if_event.*)
+ .net_if_event.data
+                0x00000000004051e0       0x14 drivers/built-in.o
+ *(SORT(.net_if_event.*))
+                0x00000000004051f4                __net_if_event_end = .
+
+net_l2_data     0x00000000004051f4        0x4 load address 0x000000000000d584
+                0x00000000004051f4                __net_l2_data_start = .
+ *(.net_l2.data)
+ .net_l2.data   0x00000000004051f4        0x4 drivers/built-in.o
+ *(SORT(.net_l2.data*))
+                0x00000000004051f8                __net_l2_data_end = .
+                0x00000000004051f8                __data_ram_end = .
+
+bss             0x0000000000405200      0x3f8
+                0x0000000000405200                . = ALIGN (0x4)
+                0x0000000000405200                __bss_start = .
+ *(.bss)
+ *(.bss.*)
+ .bss.uart_console_dev
+                0x0000000000405200        0x4 drivers/built-in.o
+ .bss.recv_off  0x0000000000405204        0x4 drivers/built-in.o
+ .bss.app_cb    0x0000000000405208        0x4 drivers/built-in.o
+ .bss.recv_buf_len
+                0x000000000040520c        0x4 drivers/built-in.o
+ .bss.recv_buf  0x0000000000405210        0x4 drivers/built-in.o
+ .bss.uart_pipe_dev
+                0x0000000000405214        0x4 drivers/built-in.o
+ *fill*         0x0000000000405218        0x8 
+ .bss.slip_context_data
+                0x0000000000405220       0x28 drivers/built-in.o
+ .bss.rx_queue  0x0000000000405248       0x10 subsys/built-in.o
+ *fill*         0x0000000000405258        0x8 
+ .bss.rx_thread_data
+                0x0000000000405260       0x38 subsys/built-in.o
+ *fill*         0x0000000000405298        0x8 
+ .bss.tx_thread_data
+                0x00000000004052a0       0x38 subsys/built-in.o
+ .bss.link_callbacks
+                0x00000000004052d8        0x8 subsys/built-in.o
+ .bss.contexts_lock
+                0x00000000004052e0       0x18 subsys/built-in.o
+ *fill*         0x00000000004052f8        0x8 
+ .bss.arp_table
+                0x0000000000405300       0x30 subsys/built-in.o
+ .bss.handlers  0x0000000000405330        0x8 subsys/built-in.o
+ .bss.addr.3934
+                0x0000000000405338        0x4 subsys/built-in.o
+ .bss.out_event
+                0x000000000040533c        0x2 subsys/built-in.o
+ .bss.in_event  0x000000000040533e        0x2 subsys/built-in.o
+ .bss.event_callbacks
+                0x0000000000405340        0x8 subsys/built-in.o
+ .bss.global_event_mask
+                0x0000000000405348        0x4 subsys/built-in.o
+ .bss.events    0x000000000040534c       0x10 subsys/built-in.o
+ *fill*         0x000000000040535c        0x4 
+ .bss.mgmt_thread_data
+                0x0000000000405360       0x38 subsys/built-in.o
+ *fill*         0x0000000000405398        0x8 
+ .bss.conns     0x00000000004053a0       0x70 subsys/built-in.o
+ .bss.counter   0x0000000000405410       0x18 subsys/built-in.o
+ *fill*         0x0000000000405428       0x18 
+ .bss._idle_thread_s
+                0x0000000000405440       0x38 kernel/lib.a(init.o)
+ *fill*         0x0000000000405478        0x8 
+ .bss._main_thread_s
+                0x0000000000405480       0x38 kernel/lib.a(init.o)
+ *fill*         0x00000000004054b8        0x8 
+ .bss._kernel   0x00000000004054c0      0x11c kernel/lib.a(sched.o)
+                0x00000000004054c0                _kernel
+ .bss._time_slice_prio_ceiling
+                0x00000000004055dc        0x4 kernel/lib.a(sys_clock.o)
+                0x00000000004055dc                _time_slice_prio_ceiling
+ .bss._time_slice_duration
+                0x00000000004055e0        0x4 kernel/lib.a(sys_clock.o)
+                0x00000000004055e0                _time_slice_duration
+ *(COMMON)
+ COMMON         0x00000000004055e4        0x4 arch/built-in.o
+                0x00000000004055e4                sys_cache_line_size
+ COMMON         0x00000000004055e8       0x10 kernel/lib.a(sys_clock.o)
+                0x00000000004055e8                _handling_timeouts
+                0x00000000004055ec                _time_slice_elapsed
+                0x00000000004055f0                _sys_clock_tick_count
+ *(.kernel_bss.*)
+                0x00000000004055f8                . = ALIGN (0x4)
+                0x00000000004055f8                __bss_end = .
+                0x00000000000000fe                __bss_num_words = ((__bss_end - __bss_start) >> 0x2)
+
+noinit          0x0000000000406000     0xe000
+ *(.noinit)
+ *(.noinit.*)
+ .noinit."/home/shubham/zephyr-zephyr-aws-1.9.2/zephyr/subsys/net/ip/net_pkt.c".3
+                0x0000000000406000      0x900 subsys/built-in.o
+ .noinit."/home/shubham/zephyr-zephyr-aws-1.9.2/zephyr/subsys/net/ip/net_pkt.c".2
+                0x0000000000406900      0x900 subsys/built-in.o
+ .noinit."/home/shubham/zephyr-zephyr-aws-1.9.2/zephyr/subsys/net/ip/net_pkt.c".1
+                0x0000000000407200       0x70 subsys/built-in.o
+                0x0000000000407200                _k_mem_slab_buf_tx_pkts
+ .noinit."/home/shubham/zephyr-zephyr-aws-1.9.2/zephyr/subsys/net/ip/net_pkt.c".0
+                0x0000000000407270       0xe0 subsys/built-in.o
+                0x0000000000407270                _k_mem_slab_buf_rx_pkts
+ .noinit."/home/shubham/zephyr-zephyr-aws-1.9.2/zephyr/arch/x86/core/fatal.c".1
+                0x0000000000407350        0x8 arch/built-in.o
+ *fill*         0x0000000000407358        0x8 
+ .noinit."/home/shubham/zephyr-zephyr-aws-1.9.2/zephyr/arch/x86/core/fatal.c".0
+                0x0000000000407360       0x30 arch/built-in.o
+ *(.kernel_noinit.*)
+ *(.stacks)
+ *fill*         0x0000000000407390      0xc70 
+ .stacks        0x0000000000408000     0x5200 subsys/built-in.o
+                0x0000000000408000                rx_stack
+                0x000000000040a000                tx_stack
+                0x000000000040c000                mgmt_stack
+ *fill*         0x000000000040d200      0xe00 
+ .stacks        0x000000000040e000     0x5800 kernel/lib.a(init.o)
+                0x000000000040e000                _idle_stack
+                0x0000000000410000                _main_stack
+                0x0000000000412000                _interrupt_stack
+ *(.stacks.*)
+                0x0000000000414000                . = ALIGN (0x1000)
+ *fill*         0x0000000000413800      0x800 
+                0x0000000000800000                __kernel_ram_end = 0x800000
+                0x0000000000400000                __kernel_ram_size = (__kernel_ram_end - __kernel_ram_start)
+                0x0000000000414000                _image_ram_end = .
+                0x0000000000400000                _image_ram_all = (0x800000 - _image_ram_start)
+                0x0000000000414000                _end = .
+
+/DISCARD/
+ *(.spurIsr)
+ *(.spurNoErrIsr)
+ *(.intList)
+ *(.gnu.linkonce.intList.*)
+ *(.mmulist)
+                0x00000000000051f8                __data_size = (__data_ram_end - __data_ram_start)
+                0x000000000000147e                __data_num_words = ((__data_size + 0x3) >> 0x2)
+OUTPUT(zephyr.elf elf32-i386)
+
+.comment        0x0000000000000000       0x11
+ .comment       0x0000000000000000       0x11 src/built-in.o
+                                         0x12 (size before relaxing)
+ .comment       0x0000000000000011       0xb4 lib/built-in.o
+ .comment       0x0000000000000011       0xd8 drivers/built-in.o
+ .comment       0x0000000000000011       0x24 misc/built-in.o
+ .comment       0x0000000000000011      0x61e ext/built-in.o
+ .comment       0x0000000000000011      0x10e subsys/built-in.o
+ .comment       0x0000000000000011       0xa2 arch/built-in.o
+ .comment       0x0000000000000011       0x12 kernel/lib.a(device.o)
+ .comment       0x0000000000000011       0x12 kernel/lib.a(errno.o)
+ .comment       0x0000000000000011       0x12 kernel/lib.a(init.o)
+ .comment       0x0000000000000011       0x12 kernel/lib.a(mem_slab.o)
+ .comment       0x0000000000000011       0x12 kernel/lib.a(poll.o)
+ .comment       0x0000000000000011       0x12 kernel/lib.a(queue.o)
+ .comment       0x0000000000000011       0x12 kernel/lib.a(sched.o)
+ .comment       0x0000000000000011       0x12 kernel/lib.a(sem.o)
+ .comment       0x0000000000000011       0x12 kernel/lib.a(sys_clock.o)
+ .comment       0x0000000000000011       0x12 kernel/lib.a(thread.o)
+ .comment       0x0000000000000011       0x12 kernel/lib.a(thread_abort.o)
+ .comment       0x0000000000000011       0x12 kernel/lib.a(idle.o)
+ .comment       0x0000000000000011       0x12 ./arch/x86/core/offsets/offsets.o
+ .comment       0x0000000000000011       0x12 /home/shubham/zephyr-sdk/sysroots/i586-zephyr-elf/usr/lib/i586-zephyr-elf/6.2.0/libgcc.a(_udivdi3.o)
+
+.debug_aranges  0x0000000000000000     0x2c58
+ .debug_aranges
+                0x0000000000000000       0x38 src/built-in.o
+ .debug_aranges
+                0x0000000000000038      0x228 lib/built-in.o
+ .debug_aranges
+                0x0000000000000260      0x2d0 drivers/built-in.o
+ .debug_aranges
+                0x0000000000000530       0x90 misc/built-in.o
+ .debug_aranges
+                0x00000000000005c0     0x1848 ext/built-in.o
+ .debug_aranges
+                0x0000000000001e08      0x750 subsys/built-in.o
+ .debug_aranges
+                0x0000000000002558      0x2a0 arch/built-in.o
+ .debug_aranges
+                0x00000000000027f8       0x30 kernel/lib.a(device.o)
+ .debug_aranges
+                0x0000000000002828       0x20 kernel/lib.a(errno.o)
+ .debug_aranges
+                0x0000000000002848       0x48 kernel/lib.a(init.o)
+ .debug_aranges
+                0x0000000000002890       0x38 kernel/lib.a(mem_slab.o)
+ .debug_aranges
+                0x00000000000028c8       0x60 kernel/lib.a(poll.o)
+ .debug_aranges
+                0x0000000000002928       0x58 kernel/lib.a(queue.o)
+ .debug_aranges
+                0x0000000000002980       0xc8 kernel/lib.a(sched.o)
+ .debug_aranges
+                0x0000000000002a48       0x50 kernel/lib.a(sem.o)
+ .debug_aranges
+                0x0000000000002a98       0x60 kernel/lib.a(sys_clock.o)
+ .debug_aranges
+                0x0000000000002af8       0xd8 kernel/lib.a(thread.o)
+ .debug_aranges
+                0x0000000000002bd0       0x20 kernel/lib.a(thread_abort.o)
+ .debug_aranges
+                0x0000000000002bf0       0x28 kernel/lib.a(idle.o)
+ .debug_aranges
+                0x0000000000002c18       0x20 ./arch/x86/core/offsets/offsets.o
+ .debug_aranges
+                0x0000000000002c38       0x20 /home/shubham/zephyr-sdk/sysroots/i586-zephyr-elf/usr/lib/i586-zephyr-elf/6.2.0/libgcc.a(_udivdi3.o)
+
+.debug_info     0x0000000000000000    0x70098
+ .debug_info    0x0000000000000000     0x2863 src/built-in.o
+ .debug_info    0x0000000000002863     0x1e70 lib/built-in.o
+ .debug_info    0x00000000000046d3     0x7dd6 drivers/built-in.o
+ .debug_info    0x000000000000c4a9      0x6dc misc/built-in.o
+ .debug_info    0x000000000000cb85    0x36d60 ext/built-in.o
+ .debug_info    0x00000000000438e5    0x1947b subsys/built-in.o
+ .debug_info    0x000000000005cd60     0x5870 arch/built-in.o
+ .debug_info    0x00000000000625d0      0x779 kernel/lib.a(device.o)
+ .debug_info    0x0000000000062d49      0x6b9 kernel/lib.a(errno.o)
+ .debug_info    0x0000000000063402      0xc15 kernel/lib.a(init.o)
+ .debug_info    0x0000000000064017     0x11c5 kernel/lib.a(mem_slab.o)
+ .debug_info    0x00000000000651dc     0x1a72 kernel/lib.a(poll.o)
+ .debug_info    0x0000000000066c4e     0x1353 kernel/lib.a(queue.o)
+ .debug_info    0x0000000000067fa1     0x1d41 kernel/lib.a(sched.o)
+ .debug_info    0x0000000000069ce2     0x11a3 kernel/lib.a(sem.o)
+ .debug_info    0x000000000006ae85     0x14a0 kernel/lib.a(sys_clock.o)
+ .debug_info    0x000000000006c325     0x1c93 kernel/lib.a(thread.o)
+ .debug_info    0x000000000006dfb8      0x7f5 kernel/lib.a(thread_abort.o)
+ .debug_info    0x000000000006e7ad      0x83b kernel/lib.a(idle.o)
+ .debug_info    0x000000000006efe8      0x69e ./arch/x86/core/offsets/offsets.o
+ .debug_info    0x000000000006f686      0xa12 /home/shubham/zephyr-sdk/sysroots/i586-zephyr-elf/usr/lib/i586-zephyr-elf/6.2.0/libgcc.a(_udivdi3.o)
+
+.debug_abbrev   0x0000000000000000    0x13f18
+ .debug_abbrev  0x0000000000000000      0x33b src/built-in.o
+ .debug_abbrev  0x000000000000033b      0xc14 lib/built-in.o
+ .debug_abbrev  0x0000000000000f4f     0x201f drivers/built-in.o
+ .debug_abbrev  0x0000000000002f6e      0x376 misc/built-in.o
+ .debug_abbrev  0x00000000000032e4     0x81c6 ext/built-in.o
+ .debug_abbrev  0x000000000000b4aa     0x40d2 subsys/built-in.o
+ .debug_abbrev  0x000000000000f57c     0x16d0 arch/built-in.o
+ .debug_abbrev  0x0000000000010c4c      0x259 kernel/lib.a(device.o)
+ .debug_abbrev  0x0000000000010ea5      0x1d6 kernel/lib.a(errno.o)
+ .debug_abbrev  0x000000000001107b      0x3de kernel/lib.a(init.o)
+ .debug_abbrev  0x0000000000011459      0x428 kernel/lib.a(mem_slab.o)
+ .debug_abbrev  0x0000000000011881      0x564 kernel/lib.a(poll.o)
+ .debug_abbrev  0x0000000000011de5      0x40a kernel/lib.a(queue.o)
+ .debug_abbrev  0x00000000000121ef      0x5c4 kernel/lib.a(sched.o)
+ .debug_abbrev  0x00000000000127b3      0x48a kernel/lib.a(sem.o)
+ .debug_abbrev  0x0000000000012c3d      0x43c kernel/lib.a(sys_clock.o)
+ .debug_abbrev  0x0000000000013079      0x5bd kernel/lib.a(thread.o)
+ .debug_abbrev  0x0000000000013636      0x284 kernel/lib.a(thread_abort.o)
+ .debug_abbrev  0x00000000000138ba      0x2a5 kernel/lib.a(idle.o)
+ .debug_abbrev  0x0000000000013b5f      0x1c3 ./arch/x86/core/offsets/offsets.o
+ .debug_abbrev  0x0000000000013d22      0x1f6 /home/shubham/zephyr-sdk/sysroots/i586-zephyr-elf/usr/lib/i586-zephyr-elf/6.2.0/libgcc.a(_udivdi3.o)
+
+.debug_line     0x0000000000000000    0x1c945
+ .debug_line    0x0000000000000000      0x5fb src/built-in.o
+ .debug_line    0x00000000000005fb     0x11be lib/built-in.o
+ .debug_line    0x00000000000017b9     0x2605 drivers/built-in.o
+ .debug_line    0x0000000000003dbe      0x385 misc/built-in.o
+ .debug_line    0x0000000000004143     0xd40f ext/built-in.o
+ .debug_line    0x0000000000011552     0x55ef subsys/built-in.o
+ .debug_line    0x0000000000016b41     0x1ff9 arch/built-in.o
+ .debug_line    0x0000000000018b3a      0x28f kernel/lib.a(device.o)
+ .debug_line    0x0000000000018dc9      0x27c kernel/lib.a(errno.o)
+ .debug_line    0x0000000000019045      0x414 kernel/lib.a(init.o)
+ .debug_line    0x0000000000019459      0x4ce kernel/lib.a(mem_slab.o)
+ .debug_line    0x0000000000019927      0x5fc kernel/lib.a(poll.o)
+ .debug_line    0x0000000000019f23      0x4cc kernel/lib.a(queue.o)
+ .debug_line    0x000000000001a3ef      0x7f5 kernel/lib.a(sched.o)
+ .debug_line    0x000000000001abe4      0x4b2 kernel/lib.a(sem.o)
+ .debug_line    0x000000000001b096      0x594 kernel/lib.a(sys_clock.o)
+ .debug_line    0x000000000001b62a      0x814 kernel/lib.a(thread.o)
+ .debug_line    0x000000000001be3e      0x31a kernel/lib.a(thread_abort.o)
+ .debug_line    0x000000000001c158      0x31d kernel/lib.a(idle.o)
+ .debug_line    0x000000000001c475      0x2d1 ./arch/x86/core/offsets/offsets.o
+ .debug_line    0x000000000001c746      0x1ff /home/shubham/zephyr-sdk/sysroots/i586-zephyr-elf/usr/lib/i586-zephyr-elf/6.2.0/libgcc.a(_udivdi3.o)
+
+.debug_frame    0x0000000000000000     0x9454
+ .debug_frame   0x0000000000000000       0x88 src/built-in.o
+ .debug_frame   0x0000000000000088      0x680 lib/built-in.o
+ .debug_frame   0x0000000000000708      0x848 drivers/built-in.o
+ .debug_frame   0x0000000000000f50      0x1d4 misc/built-in.o
+ .debug_frame   0x0000000000001124     0x52c4 ext/built-in.o
+ .debug_frame   0x00000000000063e8     0x1cc4 subsys/built-in.o
+ .debug_frame   0x00000000000080ac      0x46c arch/built-in.o
+ .debug_frame   0x0000000000008518       0xa0 kernel/lib.a(device.o)
+ .debug_frame   0x00000000000085b8       0x34 kernel/lib.a(errno.o)
+ .debug_frame   0x00000000000085ec       0xd0 kernel/lib.a(init.o)
+ .debug_frame   0x00000000000086bc       0xc4 kernel/lib.a(mem_slab.o)
+ .debug_frame   0x0000000000008780      0x170 kernel/lib.a(poll.o)
+ .debug_frame   0x00000000000088f0      0x158 kernel/lib.a(queue.o)
+ .debug_frame   0x0000000000008a48      0x340 kernel/lib.a(sched.o)
+ .debug_frame   0x0000000000008d88      0x124 kernel/lib.a(sem.o)
+ .debug_frame   0x0000000000008eac      0x16c kernel/lib.a(sys_clock.o)
+ .debug_frame   0x0000000000009018      0x380 kernel/lib.a(thread.o)
+ .debug_frame   0x0000000000009398       0x3c kernel/lib.a(thread_abort.o)
+ .debug_frame   0x00000000000093d4       0x4c kernel/lib.a(idle.o)
+ .debug_frame   0x0000000000009420       0x34 ./arch/x86/core/offsets/offsets.o
+
+.debug_str      0x0000000000000000    0x113a2
+ .debug_str     0x0000000000000000     0x270e src/built-in.o
+                                       0x2a2e (size before relaxing)
+ .debug_str     0x000000000000270e      0x630 lib/built-in.o
+                                       0x1449 (size before relaxing)
+ .debug_str     0x0000000000002d3e     0x14b2 drivers/built-in.o
+                                       0x592b (size before relaxing)
+ .debug_str     0x00000000000041f0      0x1d7 misc/built-in.o
+                                        0x4fa (size before relaxing)
+ .debug_str     0x00000000000043c7     0x8061 ext/built-in.o
+                                      0x30552 (size before relaxing)
+ .debug_str     0x000000000000c428     0x25be subsys/built-in.o
+                                       0xc5f2 (size before relaxing)
+ .debug_str     0x000000000000e9e6      0xc4e arch/built-in.o
+                                       0x422a (size before relaxing)
+ .debug_str     0x000000000000f634      0x126 kernel/lib.a(device.o)
+                                        0x6c0 (size before relaxing)
+ .debug_str     0x000000000000f75a       0x4a kernel/lib.a(errno.o)
+                                        0x617 (size before relaxing)
+ .debug_str     0x000000000000f7a4      0x18b kernel/lib.a(init.o)
+                                        0x968 (size before relaxing)
+ .debug_str     0x000000000000f92f      0x2f5 kernel/lib.a(mem_slab.o)
+                                        0xa8b (size before relaxing)
+ .debug_str     0x000000000000fc24      0x282 kernel/lib.a(poll.o)
+                                        0xcba (size before relaxing)
+ .debug_str     0x000000000000fea6      0x117 kernel/lib.a(queue.o)
+                                        0xa03 (size before relaxing)
+ .debug_str     0x000000000000ffbd      0x3a8 kernel/lib.a(sched.o)
+                                        0xcb8 (size before relaxing)
+ .debug_str     0x0000000000010365       0xac kernel/lib.a(sem.o)
+                                        0xa3d (size before relaxing)
+ .debug_str     0x0000000000010411      0x152 kernel/lib.a(sys_clock.o)
+                                        0x9d0 (size before relaxing)
+ .debug_str     0x0000000000010563      0x365 kernel/lib.a(thread.o)
+                                        0xdd1 (size before relaxing)
+ .debug_str     0x00000000000108c8       0x43 kernel/lib.a(thread_abort.o)
+                                        0x6c4 (size before relaxing)
+ .debug_str     0x000000000001090b       0x83 kernel/lib.a(idle.o)
+                                        0x6f8 (size before relaxing)
+ .debug_str     0x000000000001098e       0x5c ./arch/x86/core/offsets/offsets.o
+                                        0x621 (size before relaxing)
+ .debug_str     0x00000000000109ea      0x9b8 /home/shubham/zephyr-sdk/sysroots/i586-zephyr-elf/usr/lib/i586-zephyr-elf/6.2.0/libgcc.a(_udivdi3.o)
+                                        0xacf (size before relaxing)
+
+.debug_ranges   0x0000000000000000     0x44e0
+ .debug_ranges  0x0000000000000000       0x28 src/built-in.o
+ .debug_ranges  0x0000000000000028      0x280 lib/built-in.o
+ .debug_ranges  0x00000000000002a8      0x420 drivers/built-in.o
+ .debug_ranges  0x00000000000006c8       0xd0 misc/built-in.o
+ .debug_ranges  0x0000000000000798     0x1d28 ext/built-in.o
+ .debug_ranges  0x00000000000024c0     0x1300 subsys/built-in.o
+ .debug_ranges  0x00000000000037c0      0x248 arch/built-in.o
+ .debug_ranges  0x0000000000003a08       0x38 kernel/lib.a(device.o)
+ .debug_ranges  0x0000000000003a40       0x10 kernel/lib.a(errno.o)
+ .debug_ranges  0x0000000000003a50       0x50 kernel/lib.a(init.o)
+ .debug_ranges  0x0000000000003aa0       0xb8 kernel/lib.a(mem_slab.o)
+ .debug_ranges  0x0000000000003b58      0x158 kernel/lib.a(poll.o)
+ .debug_ranges  0x0000000000003cb0       0xd8 kernel/lib.a(queue.o)
+ .debug_ranges  0x0000000000003d88      0x268 kernel/lib.a(sched.o)
+ .debug_ranges  0x0000000000003ff0       0xe8 kernel/lib.a(sem.o)
+ .debug_ranges  0x00000000000040d8      0x1c8 kernel/lib.a(sys_clock.o)
+ .debug_ranges  0x00000000000042a0      0x1c0 kernel/lib.a(thread.o)
+ .debug_ranges  0x0000000000004460       0x10 kernel/lib.a(thread_abort.o)
+ .debug_ranges  0x0000000000004470       0x18 kernel/lib.a(idle.o)
+ .debug_ranges  0x0000000000004488       0x10 ./arch/x86/core/offsets/offsets.o
+ .debug_ranges  0x0000000000004498       0x48 /home/shubham/zephyr-sdk/sysroots/i586-zephyr-elf/usr/lib/i586-zephyr-elf/6.2.0/libgcc.a(_udivdi3.o)
+
+.debug_loc      0x0000000000000000    0x21bf1
+ .debug_loc     0x0000000000000000     0x2570 lib/built-in.o
+ .debug_loc     0x0000000000002570     0x13d7 drivers/built-in.o
+ .debug_loc     0x0000000000003947      0x6f2 misc/built-in.o
+ .debug_loc     0x0000000000004039    0x13835 ext/built-in.o
+ .debug_loc     0x000000000001786e     0x6a59 subsys/built-in.o
+ .debug_loc     0x000000000001e2c7      0x53d arch/built-in.o
+ .debug_loc     0x000000000001e804       0x69 kernel/lib.a(device.o)
+ .debug_loc     0x000000000001e86d       0xa9 kernel/lib.a(init.o)
+ .debug_loc     0x000000000001e916      0x526 kernel/lib.a(mem_slab.o)
+ .debug_loc     0x000000000001ee3c      0x756 kernel/lib.a(poll.o)
+ .debug_loc     0x000000000001f592      0x45d kernel/lib.a(queue.o)
+ .debug_loc     0x000000000001f9ef      0xc78 kernel/lib.a(sched.o)
+ .debug_loc     0x0000000000020667      0x3fb kernel/lib.a(sem.o)
+ .debug_loc     0x0000000000020a62      0x419 kernel/lib.a(sys_clock.o)
+ .debug_loc     0x0000000000020e7b      0x799 kernel/lib.a(thread.o)
+ .debug_loc     0x0000000000021614       0x27 kernel/lib.a(thread_abort.o)
+ .debug_loc     0x000000000002163b      0x5b6 /home/shubham/zephyr-sdk/sysroots/i586-zephyr-elf/usr/lib/i586-zephyr-elf/6.2.0/libgcc.a(_udivdi3.o)

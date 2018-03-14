@@ -1,0 +1,1 @@
+cmd_ext/lib/crypto/built-in.o :=  /home/shubham/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/i586-zephyr-elf/i586-zephyr-elf-ld -nostartfiles -nodefaultlibs -nostdlib -static   -r -o ext/lib/crypto/built-in.o ext/lib/crypto/mbedtls/built-in.o 

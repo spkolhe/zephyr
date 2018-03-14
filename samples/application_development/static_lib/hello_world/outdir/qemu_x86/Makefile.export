@@ -1,0 +1,50 @@
+# file is auto-generated, do not modify !
+BOARD=
+
+VERSION_MAJOR=1
+VERSION_MINOR=7
+PATCHLEVEL=1
+VERSION_RESERVED=0
+EXTRAVERSION=
+KERNELRELEASE=
+KERNELVERSION=1.7.1
+ARCH=x86
+CONFIG_SHELL=/bin/bash
+HOSTCC=gcc
+HOSTCFLAGS=-Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -std=gnu89
+CROSS_COMPILE=/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/i586-zephyr-elf/i586-zephyr-elf-
+AS=/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/i586-zephyr-elf/i586-zephyr-elf-as
+LD=/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/i586-zephyr-elf/i586-zephyr-elf-ld
+CC=/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/i586-zephyr-elf/i586-zephyr-elf-gcc
+CXX=/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/i586-zephyr-elf/i586-zephyr-elf-g++
+CPP=/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/i586-zephyr-elf/i586-zephyr-elf-gcc -E
+AR=/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/i586-zephyr-elf/i586-zephyr-elf-ar
+NM=/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/i586-zephyr-elf/i586-zephyr-elf-nm
+STRIP=/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/i586-zephyr-elf/i586-zephyr-elf-strip
+OBJCOPY=/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/i586-zephyr-elf/i586-zephyr-elf-objcopy
+OBJDUMP=/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/i586-zephyr-elf/i586-zephyr-elf-objdump
+GDB=/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/i586-zephyr-elf/i586-zephyr-elf-gdb
+MAKE=make
+AWK=awk
+INSTALLKERNEL=
+PERL=perl
+PYTHON=python
+GENOFFSET_H=scripts/gen_offset_header/gen_offset_header
+HOSTCXX=g++
+HOSTCXXFLAGS=-O2
+CHECK=sparse
+CHECKFLAGS=-Wbitwise -Wno-return-void -nostdinc -isystem /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/i586-zephyr-elf/gcc/i586-zephyr-elf/6.2.0/include -isystem /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/i586-zephyr-elf/gcc/i586-zephyr-elf/6.2.0/include-fixed
+KBUILD_CPPFLAGS=-DKERNEL -D__ZEPHYR__=1
+NOSTDINC_FLAGS= -nostdinc -isystem /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/i586-zephyr-elf/gcc/i586-zephyr-elf/6.2.0/include -isystem /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/i586-zephyr-elf/gcc/i586-zephyr-elf/6.2.0/include-fixed
+ZEPHYRINCLUDE=-I/home/tejashree/Zephyr_AWS_Iot_SDK-master/kernel/include -I/home/tejashree/Zephyr_AWS_Iot_SDK-master/arch/x86/include -I/home/tejashree/Zephyr_AWS_Iot_SDK-master/arch/x86/soc/ia32 -I/home/tejashree/Zephyr_AWS_Iot_SDK-master/boards/x86/qemu_x86 -I/home/tejashree/Zephyr_AWS_Iot_SDK-master/include -I/home/tejashree/Zephyr_AWS_Iot_SDK-master/include -I/home/tejashree/zephyr-zephyr-aws-1.9.2/samples/application_development/static_lib/hello_world/outdir/qemu_x86/include/generated -I/home/tejashree/zephyr-zephyr-aws-1.9.2/samples/application_development/static_lib/hello_world/outdir/qemu_x86/misc/generated/sysgen -include /home/tejashree/zephyr-zephyr-aws-1.9.2/samples/application_development/static_lib/hello_world/outdir/qemu_x86/include/generated/autoconf.h -I/home/tejashree/Zephyr_AWS_Iot_SDK-master/ext/lib/crypto/tinycrypt/include -I/home/tejashree/Zephyr_AWS_Iot_SDK-master/lib/libc/minimal/include
+OBJCOPYFLAGS=
+LDFLAGS=-nostartfiles -nodefaultlibs -nostdlib -static
+KBUILD_CFLAGS=-c -g -std=c99 -Wall -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -Wno-format-zero-length -Wno-main -ffreestanding -Os -fno-asynchronous-unwind-tables -fno-stack-protector -ffunction-sections -fdata-sections -mpreferred-stack-boundary=2 -mno-sse -march=pentium -Wno-unused-but-set-variable -fno-reorder-functions -fno-defer-pop -Wno-pointer-sign -fno-strict-overflow -Werror=implicit-int
+KBUILD_CXXFLAGS=-c -g -std=c++11 -fno-reorder-functions -fno-asynchronous-unwind-tables -fcheck-new -fno-defer-pop -Wall -Wno-unused-but-set-variable -Wno-format-zero-length -Wno-main -ffreestanding -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -ffunction-sections -fdata-sections -mpreferred-stack-boundary=2 -mno-sse -march=pentium
+CFLAGS_GCOV=-fprofile-arcs -ftest-coverage
+KBUILD_AFLAGS=-c -g -xassembler-with-cpp -D_ASMLANGUAGE -march=pentium
+AFLAGS_KERNEL=
+KBUILD_ARFLAGS=D
+FIXDEP=scripts/basic/fixdep
+
+include /home/tejashree/zephyr-zephyr-aws-1.9.2/samples/application_development/static_lib/hello_world/outdir/qemu_x86/include/config/auto.conf

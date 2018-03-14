@@ -1,0 +1,14 @@
+-nostartfiles -nodefaultlibs -nostdlib -static -no-pie -Wl,-X -Wl,-N -Wl,--gc-sections -Wl,--build-id=none
+-Wl,-Map=zephyr.map
+-L ./include/generated
+-u _OffsetAbsSyms -u _ConfigAbsSyms
+-e __start
+-Wl,--start-group
+-Wl,--whole-archive
+libapplication.a
+libzephyr.a
+-Wl,--no-whole-archive
+kernel/lib.a
+./arch/x86/core/offsets/offsets.o
+-Wl,--end-group
+ -L /home/tejas777/zephyr-sdk/sysroots/i586-zephyr-elf/usr/lib/i586-zephyr-elf/6.2.0 -L /home/tejas777/zephyr-sdk/sysroots/i586-zephyr-elf/usr/lib/.  -lgcc

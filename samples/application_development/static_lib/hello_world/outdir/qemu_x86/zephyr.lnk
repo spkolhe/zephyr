@@ -1,0 +1,14 @@
+-L/home/tejashree/zephyr-zephyr-aws-1.9.2/samples/application_development/static_lib/hello_world/outdir/qemu_x86/mylib/lib -nostartfiles -nodefaultlibs -nostdlib -static -no-pie -Wl,-X -Wl,-N -Wl,--gc-sections -Wl,--build-id=none
+-Wl,-Map=zephyr.map
+-L ./include/generated
+-u _OffsetAbsSyms -u _ConfigAbsSyms
+-e __start
+-Wl,--start-group
+-Wl,--whole-archive
+libapplication.a
+libzephyr.a
+-Wl,--no-whole-archive
+kernel/lib.a
+./arch/x86/core/offsets/offsets.o
+-Wl,--end-group
+ -L /opt/zephyr-sdk/sysroots/i586-zephyr-elf/usr/lib/i586-zephyr-elf/6.2.0 -L /opt/zephyr-sdk/sysroots/i586-zephyr-elf/usr/lib/.  -lmylib  -lgcc
